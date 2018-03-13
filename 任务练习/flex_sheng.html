@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>flex实现圣杯布局</title>
+		<style type="text/css">
+			body {
+				display: flex;
+				flex-direction: column;
+				min-height: 100vh;
+			}
+			
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			#HolyGrail {
+				display: flex;
+				min-height: 500px;
+				flex: 1;
+			}
+			
+			header,
+			footer {
+				background-color: #CCC;
+				height: 100px;
+				line-height: 100px;
+				text-align: center;
+			}
+			
+			h1 {
+				color: #FFF;
+			}
+			
+			#mid,
+			#right,
+			#left {
+				height: 30vh;
+			}
+			
+			#mid {
+				background-color: rgba(0,0,0,.4);
+				flex-grow: 2;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+			
+			#right {
+				background-color: lightskyblue;
+				flex-grow: 1;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+			
+			#left {
+				background-color: orange;
+				flex-grow: 1;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+			
+			@media only screen and (max-width: 768px) {
+				#HolyGrail {
+					flex-direction: column;
+					flex: 1;
+				}
+			}	
+			</style>
+	</head>
+	<body>
+		<header>
+			<h1>#header</h1>
+		</header>
+		<div id="HolyGrail">
+			<aside id="left">
+				<h1>#left</h1>
+			</aside>
+			<section id="mid">
+				<h1>#center</h1>
+			</section>
+			<aside id="right">
+				<h1>#right</h1>
+			</aside>
+		</div>
+		<footer>
+			<h1>#footer</h1>
+		</footer>
+	</body>
+</html>

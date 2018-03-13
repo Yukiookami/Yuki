@@ -8,6 +8,7 @@
 	<style>
 		body {
 			background-color: rgba(0,0,0,.2);
+			
 		}
 		
 		.clear {
@@ -58,6 +59,10 @@
 			background-color: #FFF;
 			padding: 15px;
 			box-shadow: 3px 3px 2px rgba(0,0,0,.4);
+		}
+		
+		section {
+			margin-right: 5px;
 		}
 		
 		h2,
@@ -122,7 +127,7 @@
 		}
 		
 		form {
-			width: 700px;
+			width: 500px;
 			margin: 0 auto;
 		}
 		
@@ -132,7 +137,12 @@
 		
 		form td {
 			height: 30px;
-			width: 200px;
+			width: 150px;
+			text-indent: 2em;
+		}
+		
+		.text_in_right {
+			text-align: right;
 		}
 		
 		form input {
@@ -142,18 +152,33 @@
 		
 		.remind {
 			position: relative;
-			left: 205px;
+			left: 155px;
 			color: rgba(0,0,0,.4);
 		}
 		
 		aside button {
 			display: block;
-			width: 1520px;
+			width: 330px;
 			margin: 20px auto;
 			background-color: #35a7dc;
 			height: 50px;
 			border-radius: 7px;
 			box-shadow: none;
+		}
+		
+		#img_show_box {
+			display: flex;
+			flex: auto;
+			flex-wrap: wrap;
+			width: 100%;
+			border: none;
+		}
+		
+		#img_show_box div {
+			display: flex;
+			flex-direction:column ;
+			justify-content: center;
+			align-items: center;
 		}
 		
 		footer {
@@ -163,6 +188,27 @@
 			height: 100px;
 			color: #FFFFFF;
 			text-align: center;
+		}
+		
+		#flex_show_box,
+		#left_show_box,
+		#right_show_box {
+			border: none;
+		}
+		
+		#flex_show_box {
+			display: flex;
+			justify-content: center;
+			flex: 1;
+		}
+		
+		#left_show_box {
+			max-width:1400px ;
+		}
+		
+		aside {
+			width: 500px;
+			margin-left: 5px;
 		}
 	</style>
 	</head>
@@ -185,229 +231,237 @@
 			</ul>
 			<div class="clear"></div>
 		</header>
-		<section>
-			<h1>文章一级标题</h1>
-			<h2>文章二级标题</h2>
-			<hgroup>文章作者 文章发表时间</hgroup>
-			<p>
-				这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落
-				这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落换行了<br>
-				这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落
-				这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落
-				这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落
-			</p>
-			<p>
-				这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落换行了<br>
-				这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落
-				这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落
-				这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落
-			</p>
-			<p>
-				这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落
-				这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落
-				<a href="http://www.w3school.com.cn/tags/tag_textarea.asp">这里有一个链接链接到W3C</a>
-				<strong>这里有个粗体字</strong>这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落
-			</p>
-			<img src="img/timg.jpg">
-			<p>
-				这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落
-				这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落换行了<br>
-				这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落
-				这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落
-				<strong>这里有个粗体字</strong>
-				<a href="http://www.w3school.com.cn/tags/tag_textarea.asp" target="_blank">
-					这里有个链接外跳到W3C
-				</a>
-				这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落
-			</p>
-		</section>
-		<section>
-			<h1>另一个文章的一级标题</h1>
-			<h2>文章的二级标题</h2>
-			<hgroup>文章作者 文章发表时间</hgroup>
-			<p>
-				这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落
-				这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落<br>换行了
-				这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落
-			</p>
-			<p>
-				这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落
-				这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落
-				这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落<br>换行了
-			</p>
-			<p>
-				这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落
-				这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落
-				<a href="http://www.w3school.com.cn/tags/tag_textarea.asp">这里有一个链接到W3C</a>
-				这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落<strong>这里有个粗体字</strong>
-				这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落
-				这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落
-			</p>
-			<img src="img/timg.jpg">
-			<ul>
-				<li>项目列表1</li>
-				<li>项目列表2</li>
-				<li>项目列表3</li>
-			</ul>
-		</section>
-		<section>
-			<h1>图片</h1>
-			<div>
-				<h6>绝望的气息</h6>
-				<img src="img/zetsubou.jpg" />
+		<div id="flex_show_box">
+			<div id="left_show_box">
+				<section>
+					<h1>文章一级标题</h1>
+					<h2>文章二级标题</h2>
+					<hgroup>文章作者 文章发表时间</hgroup>
+					<p>
+						这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落
+						这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落换行了<br>
+						这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落
+						这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落
+						这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落
+					</p>
+					<p>
+						这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落换行了<br>
+						这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落
+						这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落
+						这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落
+					</p>
+					<p>
+						这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落
+						这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落
+						<a href="http://www.w3school.com.cn/tags/tag_textarea.asp">这里有一个链接链接到W3C</a>
+						<strong>这里有个粗体字</strong>这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落
+					</p>
+					<img src="img/timg.jpg">
+					<p>
+						这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落
+						这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落换行了<br>
+						这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落
+						这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落
+						<strong>这里有个粗体字</strong>
+						<a href="http://www.w3school.com.cn/tags/tag_textarea.asp" target="_blank">
+							这里有个链接外跳到W3C
+						</a>
+						这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落
+					</p>
+				</section>
+				<section>
+					<h1>另一个文章的一级标题</h1>
+					<h2>文章的二级标题</h2>
+					<hgroup>文章作者 文章发表时间</hgroup>
+					<p>
+						这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落
+						这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落<br>换行了
+						这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落
+					</p>
+					<p>
+						这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落
+						这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落
+						这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落<br>换行了
+					</p>
+					<p>
+						这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落
+						这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落
+						<a href="http://www.w3school.com.cn/tags/tag_textarea.asp">这里有一个链接到W3C</a>
+						这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落<strong>这里有个粗体字</strong>
+						这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落
+						这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落
+					</p>
+					<img src="img/timg.jpg">
+					<ul>
+						<li>项目列表1</li>
+						<li>项目列表2</li>
+						<li>项目列表3</li>
+					</ul>
+				</section>
+				<section >
+					<h1>图片</h1>
+					<div id="img_show_box">
+					<div>
+						<h6>绝望的气息</h6>
+						<img src="img/zetsubou.jpg" />
+					</div>
+					<div>
+						<h6>绝望的气息</h6>
+						<img src="img/zetsubou.jpg" />
+					</div>
+					<div>
+						<h6>绝望的气息</h6>
+						<img src="img/zetsubou.jpg" />
+					</div>
+					<div>
+						<h6>绝望的气息</h6>
+						<img src="img/zetsubou.jpg" />
+					</div>
+					<div>
+						<h6>绝望的气息</h6>
+						<img src="img/zetsubou.jpg" />
+					</div>
+					<div>
+						<h6>绝望的气息</h6>
+						<img src="img/zetsubou.jpg" />
+					</div>
+					<div>
+						<h6>绝望的气息</h6>
+						<img src="img/zetsubou.jpg" />
+					</div>
+					<div>
+						<h6>绝望的气息</h6>
+						<img src="img/zetsubou.jpg" />
+					</div>
+					<div>
+						<h6>绝望的气息</h6>
+						<img src="img/zetsubou.jpg" />
+					</div>
+					<div>
+						<h6>绝望的气息</h6>
+						<img src="img/zetsubou.jpg" />
+					</div>
+					</div>
+				</section>
+				<section>
+					<h1>最后一篇文章的一级标题</h1>
+					<h2>文章的二级标题</h2>
+					<hgroup>文章作者 文章发表时间</hgroup>
+					<ol>
+						<li>排名1</li>
+						<li>排名2</li>
+						<li>排名3</li>
+					</ol>
+					<span>下面是一个表格</span>
+					<table>
+						<tr>
+							<td class="table_head">表头</td>
+							<td class="table_head">表头</td>
+							<td class="table_head">表头</td>
+						</tr>
+						<tr>
+							<td>表内容单元格</td>
+							<td>表内容单元格</td>
+							<td>
+								<a href="#">操作</a>
+							</td>
+						</tr>
+						<tr>
+							<td>表内容单元格</td>
+							<td>表内容单元格</td>
+							<td>
+								<a href="#">操作</a>
+							</td>
+						</tr>
+						<tr>
+							<td>表内容单元格</td>
+							<td>表内容单元格</td>
+							<td>
+								<a href="#">操作</a>
+							</td>
+						</tr>
+						<tr>
+							<td class="table_foot">总计</td>
+							<td colspan="2" class="table_foot">1000</td>
+						</tr>
+					</table>
+				</section>
 			</div>
-			<div>
-				<h6>绝望的气息</h6>
-				<img src="img/zetsubou.jpg" />
+			<div id="right_show_box">
+				<aside>
+					<h1>这里以后是个侧栏，这里是侧栏标题</h1>
+					<form>
+						<table>
+							<tr>
+								<td class="text_in_right">
+									<label for="text_in">请输入邮箱地址</label>
+								</td>
+								<td>
+									<input id="text_in" type="text" placeholder="这是一个文本输入框"/>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2" class="remind">
+									<span>邮箱地址请按要求格式输入</span>
+								</td>
+							</tr>
+							<tr>
+								<td  class="text_in_right">
+									<label for="password_in">请输入密码</label>
+								</td>
+								<td>
+									<input id="password_in" type="password" />
+								</td>
+							</tr>
+							<tr>
+								<td  class="text_in_right">
+									<label for="password_again">请重复请输入密码</label>
+								</td>
+								<td>
+									<input id="password_again" type="password" />
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2" class="remind">
+									<span>密码为6-16位英文数字</span>
+								</td>
+							</tr>
+							<tr>
+								<td  class="text_in_right">性别</td>
+								<td>
+									<input type="radio" name="sex" value="man" />男
+									<input type="radio" name="sex" value="woman" />女
+								</td>
+							</tr>
+							<tr>
+								<td  class="text_in_right">城市</td>
+								<td>
+									<select>
+										<option selected="selected">北京</option>
+										<option>四川</option>
+										<option>重庆</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td  class="text_in_right">爱好</td>
+								<td>
+									<input type="checkbox" value="sport" name="like" />运动
+									<input type="checkbox" value="art" name="like" />艺术
+									<input type="checkbox" value="sence" name="like" />科学
+								</td>
+							</tr>
+								<td  class="text_in_right">个人描述</td>
+								<td>
+									<textarea rows="6" cols="26">这是一个多行文本输入框</textarea>
+								</td>
+							</tr>
+						</table>
+					</form>
+					<button type="submit">确认提交</button>
+				</aside>
 			</div>
-			<div>
-				<h6>绝望的气息</h6>
-				<img src="img/zetsubou.jpg" />
-			</div>
-			<div>
-				<h6>绝望的气息</h6>
-				<img src="img/zetsubou.jpg" />
-			</div>
-			<div>
-				<h6>绝望的气息</h6>
-				<img src="img/zetsubou.jpg" />
-			</div>
-			<div>
-				<h6>绝望的气息</h6>
-				<img src="img/zetsubou.jpg" />
-			</div>
-			<div>
-				<h6>绝望的气息</h6>
-				<img src="img/zetsubou.jpg" />
-			</div>
-			<div>
-				<h6>绝望的气息</h6>
-				<img src="img/zetsubou.jpg" />
-			</div>
-			<div>
-				<h6>绝望的气息</h6>
-				<img src="img/zetsubou.jpg" />
-			</div>
-			<div>
-				<h6>绝望的气息</h6>
-				<img src="img/zetsubou.jpg" />
-			</div>
-		</section>
-		<section>
-			<h1>最后一篇文章的一级标题</h1>
-			<h2>文章的二级标题</h2>
-			<hgroup>文章作者 文章发表时间</hgroup>
-			<ol>
-				<li>排名1</li>
-				<li>排名2</li>
-				<li>排名3</li>
-			</ol>
-			<span>下面是一个表格</span>
-			<table>
-				<tr>
-					<td class="table_head">表头</td>
-					<td class="table_head">表头</td>
-					<td class="table_head">表头</td>
-				</tr>
-				<tr>
-					<td>表内容单元格</td>
-					<td>表内容单元格</td>
-					<td>
-						<a href="#">操作</a>
-					</td>
-				</tr>
-				<tr>
-					<td>表内容单元格</td>
-					<td>表内容单元格</td>
-					<td>
-						<a href="#">操作</a>
-					</td>
-				</tr>
-				<tr>
-					<td>表内容单元格</td>
-					<td>表内容单元格</td>
-					<td>
-						<a href="#">操作</a>
-					</td>
-				</tr>
-				<tr>
-					<td class="table_foot">总计</td>
-					<td colspan="2" class="table_foot">1000</td>
-				</tr>
-			</table>
-		</section>
-		<aside>
-			<h1>这里以后是个侧栏，这里是侧栏标题</h1>
-			<form>
-				<table>
-					<tr>
-						<td>
-							<label for="text_in">请输入邮箱地址</label>
-						</td>
-						<td>
-							<input id="text_in" type="text" placeholder="这是一个文本输入框"/>
-						</td>
-					</tr>
-					<tr>
-						<td colspan="2" class="remind">
-							<span>邮箱地址请按要求格式输入</span>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<label for="password_in">请输入密码</label>
-						</td>
-						<td>
-							<input id="password_in" type="password" />
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<label for="password_again">请重复请输入密码</label>
-						</td>
-						<td>
-							<input id="password_again" type="password" />
-						</td>
-					</tr>
-					<tr>
-						<td colspan="2" class="remind">
-							<span>密码为6-16位英文数字</span>
-						</td>
-					</tr>
-					<tr>
-						<td>性别</td>
-						<td>
-							<input type="radio" name="sex" value="man" />男
-							<input type="radio" name="sex" value="woman" />女
-						</td>
-					</tr>
-					<tr>
-						<td>城市</td>
-						<td>
-							<select>
-								<option selected="selected">北京</option>
-								<option>四川</option>
-								<option>重庆</option>
-							</select>
-						</td>
-					</tr>
-					<tr>
-						<td>爱好</td>
-						<td>
-							<input type="checkbox" value="sport" name="like" />运动
-							<input type="checkbox" value="art" name="like" />艺术
-							<input type="checkbox" value="sence" name="like" />科学
-						</td>
-					</tr>
-						<td>个人描述</td>
-						<td>
-							<textarea rows="6" cols="40">这是一个多行文本输入框</textarea>
-						</td>
-					</tr>
-				</table>
-			</form>
-			<button type="submit">确认提交</button>
-		</aside>
+		</div>
 		<footer>
 			<span>版权所有©</span>
 		</footer>

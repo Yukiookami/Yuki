@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>auto居中</title>
+		<style type="text/css">
+			body {
+				height: 800px;
+			}
+			
+			.box_show {
+				background-color: #CCC;
+				height: 200px;
+				width: 400px;
+				position: relative;
+				overflow:hidden;
+				margin-bottom: 20px;
+			}
+			
+			.circle {
+				height: 100px;
+				width: 100px;
+				border-radius: 50%;
+				background-color: yellow;
+			}
+			
+			.left_circle {
+				position: absolute;
+				left: -50px;
+				top: -50px;
+			}
+			
+			.right_circle {
+				position: absolute;
+				right: -50px;
+				bottom: -50px;
+			}
+			
+			#mid_houho_1 {
+				margin: auto;
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="mid_houho_1" class="box_show">
+			<div class="left_circle circle">
+				
+			</div>
+			<div class="right_circle circle">
+				
+			</div>
+		</div>
+	</body>
+</html>

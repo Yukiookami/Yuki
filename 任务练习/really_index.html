@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html>
+	<head lang="zh-CN">
+		<meta charset="UTF-8">
+		<link href="https://cdn.bootcss.com/normalize/7.0.0/normalize.css" rel="stylesheet">
+		<title>这是一条神奇的天路</title>
+		<style type="text/css">
+			body {
+				width: 980px;
+				height: 1386px;
+				margin: 0 auto;
+			}	
+			
+			header {
+				display: flex;
+				justify-content: space-between;
+				-webkit-justify-content: space-between;
+				align-items: flex-end;
+				-webkit-align-content: flex-end;	
+				width: 892px;
+				border-bottom: 2px solid #938e8c;
+				margin-bottom: 20px;
+			}
+			
+			header div {
+				display: flex;
+				align-items: flex-end;
+				height: 61px;
+				width: 110px;
+				background-image: url(img/bg_color.jpg);
+			}
+			
+			header div span,
+			header span {
+				font-family: simhei;
+				font-size: 12px;
+			}
+			
+			header div span {
+				color: #FFF;
+				text-indent: 0.5em;
+			}
+			
+			header span {
+				color: #d45d5c;
+			}
+			
+			#img_show_box {
+				width: 203px;
+				border-top: 2px solid #cc8091;
+				display: flex;
+				justify-content: space-between;
+				-webkit-justify-content: space-between;
+			}
+			
+			#img_show_box h1 {
+				font-size: 24px;
+				color: #000000;
+				font-family: Microsoft YaHei;
+				text-decoration: underline;
+				line-height: 40px;
+			}
+			
+			#img_show_box img {
+				margin-right: 40px;
+			}
+			
+			.aside_p {
+				font-size: 12px;
+				color: #676767;
+				margin-top: 0;
+				height: 10px;
+				font-family: KaiTi;
+			}
+			
+			aside em {
+				font-size: 116px;
+				color: #75b86b;
+				font-family: Microsoft YaHei;
+			}
+			
+			#text_box {
+				display: flex;
+			}
+			
+			#text_box_small {
+				display: flex;
+				justify-content: flex-end;
+				-webkit-justify-content: flex-end;
+				align-items: baseline;
+				-webkit-align-content: flex-end;
+				flex-direction: column;
+				padding-bottom: 7px;
+			}
+			
+			#text_box span {
+				font-family: Microsoft YaHei;
+				color: #cc8091;
+			}
+			
+			.big_font {
+				font-size: 55px;
+			}
+			
+			.small_font {
+				color: #ADADAD !important;
+			}
+			
+			aside {
+				margin-top: -10px;
+			}
+			
+			#text_show {
+				display: flex;
+			}
+			
+			#text_show h1 {
+				font-size: 16px;
+				text-decoration: underline;
+				font-family: Microsoft YaHei;
+				font-weight: bold;
+			}
+			
+			.color_0 {
+				color: #418c59;
+			}
+			
+			.color_1 {
+				color: #d2994f;
+			}
+			
+			.color_2 {
+				color: #cc7680;
+			}
+			
+			#text_show p {
+				font-size: 12px;
+				color: #767777;
+				font-family: SimSun;
+				line-height: 16px;
+			}
+			
+			#text_show div {
+				width: 200px;
+				margin-right: 20px;
+			}
+			
+			#text_list ul {
+				list-style: none;
+				margin: 0;
+				padding: 0;
+				line-height: 16px;
+			}
+			
+			#text_list em {
+				font-size: 12px;
+				font-family: Microsoft YaHei;
+				opacity: .7;
+				color: #cd4a48;
+			}
+			
+			.font_f {
+				font-family: Microsoft YaHei !important;
+				opacity: .7;
+			}
+			
+			#text_list {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				height: 75%;
+			}
+			
+			.h_1 {
+				font-size: 42px;
+				line-height: 40px !important;
+			}
+			
+			.em_style {
+				font-size: 72px;
+				color: #f5e327;
+			}
+			
+			.h_2 {
+				font-size: 33px;
+			}
+			
+			#last_benn {
+				display: flex;
+			}
+			
+			#left {
+				width: 415px;
+				margin-top: 20px;
+				position: relative;
+			}
+			
+			#left h1 {
+				color: #11456b;
+				font-family: SimHei;
+				line-height: 16px;
+			}
+			
+			.border {
+				border-bottom: 2px #11456b solid;
+			}
+			
+			#left p {
+				font-size: 12px;
+				color: #767777;
+				line-height: 16px;
+				font-family: SimSun;
+			}
+			
+			#left span {
+				font-size: 70px;
+				font-family: Microsoft YaHei;
+				color: #F5E327;
+				display: block;
+				margin:20px 5px 5px 5px;
+				float: left;
+				height: 40px; 
+			}
+			
+			#left img {
+				float: right;
+				margin: 20px;
+			}
+			
+			#right {
+				width: 459px;
+				margin: 60px 0 0 40px;
+			}
+			
+			#text_are {
+				width: 459px;
+				height: 318px;
+				background-color: #eeedd6;
+				margin-top: 40px;
+				padding-top: 40px;
+			}
+			
+			#text_are ul {
+				list-style: none;
+				font-size: 16px;
+				color: #5a5b5b;
+				line-height: 40px;
+				font-family: SimSun;
+			}
+			
+			#text_are ul span {
+				font-size: 12px;
+				font-style: italic;
+			}
+			
+			#red_font {
+				display: flex;
+				position: relative;
+			}
+			
+			#red_font p {
+				font-size: 14px;
+				color: #5A5B5B;
+				font-family: simhei;
+				line-height: 16px;
+				padding: 0;
+				margin: 30px 0 0 0;
+				text-indent: 2em;
+			}
+			
+			#red_font span {
+				font-size: 72px;
+				color: #D45D5C;
+				padding: 0;
+				line-height: 0;
+			}
+			
+			.cl {
+				clear: both;
+			}
+			
+			footer {
+				margin-top: 30px;
+				position: relative;
+				width: 912px;
+			}
+			
+			#border_footer {
+				width: 912px;
+				border-top: 1px solid #938E8C;
+			}
+			
+			footer span {
+				font-family: simhei;
+				font-size: 12px;
+				color: #D45D5C;
+				position: absolute;
+				right: 0;
+			}
+			
+			.pos_1 {
+				position: absolute;
+				right: 133px;
+				top: 140px;
+			}
+			
+			.pos_0 {
+				position: absolute;
+				top: 55px;
+				right: 172px;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<div>
+				<span>ife.baidu.com</span>
+			</div>
+			<span>2016.03</span>
+		</header>
+		<section id="img_show_box">
+				<div>
+					<img src="img/task_1_6_1_03.jpg" />
+				</div>
+				<aside>
+					<h1 style="margin-top: 0 ;"><span>A</span>BOUT</h1>
+					<h1 style="margin-bottom: 0;"><span>T</span>ECHNOLOG</h1>
+					<p class="aside_p">
+						About technologe about technologe 
+					  	about technologe
+					</p>
+					<em>700</em>
+					<div id="text_box">
+						<span class="big_font">3.2</span>
+						<div id="text_box_small">
+							<span class="mid_font">css</span>
+							<span class="small_font">cssssccsccscssc</span>
+						</div>
+					</div>
+				</aside>
+		</section>
+		<section id="text_show">
+			<div>
+				<h1 class="color_0">What</h1>
+				<p>
+					端前端前端端前端前端前端前端前端前端前
+					端前端前端前端前端前端前端前端端前端前
+					端端前端前端前端前端前端前端前端前端前
+					端前端前端前端前端前端端前端前端端前端
+					前端前端前端前端前端前端前端前端前端前
+					端前端前端前端端前端前端端前端前端前端
+					前端前端前端前端前端前端前端前端前端前
+					端前端端前端前端前端前端前端前端前端前
+					端前端端前端前端
+				</p>
+			</div>
+			<div>
+				<h1 class="color_1">What</h1>
+				<p class="font_f">
+					端前端前端端前端前端前端前端前端前端前
+					端前端前端前端前端前端前端前端端前端前
+					端端前端前端前端前端前端前端前端前端前
+					端前端前端前端前端前端端前端前端端前端
+					前端前端前端前端前端前端前端前端前端前
+					端前端前端前端端前端前端端前端前端前端
+					前端前端前端前端前端前端前端前端前端前
+					端前端端前端前端前端前端前端前端前端前
+					端前端端前端前端
+				</p>
+			</div>
+			<div>
+				<h1 class="color_2">How</h1>
+				<div id="text_list">
+					<p>
+						前端前端端前端前端
+						前端前端前端前端前端前
+						端前端前端端前
+					</p>
+					<ul>
+						<li><span>What</span>-------- <em>40%</em></li>
+						<li><span>What</span>-------- <em>30%</em></li>
+						<li><span>What</span>-------- <em>30%</em></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section id="last_benn">
+			<aside id="left">
+				<section class="border">
+					<h1 class="h_1">
+						<em class="em_style">THE</em> TECHNOLOGE OF FRONT
+					</h1>
+					<h1 class="h_2">
+						前端技术领域
+					</h1>
+				</section>
+				<section>
+					<p>
+						<span>前</span>
+						端前端前端前端前端前端前端前端前端前端前端前端前端前端前
+						            前端前端前端前端前端前端前端前端前端前端前端前端前端前端
+						            端前端前端前端前端前端前端前端前端前端前端前端前端前端前
+						            端前端前端前端前端前端前端前端前端前端前端前端前端前端前
+						            前端前端前端前端前端前端前端前端前端前端前端前端前端前端
+						<img src="img/task_1.jpg" />
+						前端前端前端前端前端前端前端前端前端
+						
+						前端前端前端前端前端前端前端前端端前
+						端前端端前端前端前端前端前端前端前端
+						前端前端前端前端前端前端前端端前端前
+						端端前端前端前端前端前端前端前端前端
+						前端前端前端前端前端前端端前端前端端
+						前端前端前端前端前端前端前端前端前端
+						前端前端前端前端前端端前端前端端前端
+						前端前端前端前端前。
+						
+						    端前端前端端前端前端前端前端前端
+						前端前端前端前端前端前端前端前端端前
+						端前端端前端前端前端前端前端前端前端
+						前端前端前端前端前端前端前端端前端前
+						端端前端前端前端前端前端前端前端前端
+						前端前端前端前端前端前端端前端前端端
+						前端前端前端前端前端前端前端前端前端
+						前端前端前端前端前端端前端前端端前端
+						前端前端前端前端前前端前端前端前端前
+						前端前端前端前端前端前端前端前端前端
+						前端前端前端前端前端端前端前端端前端
+						    前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端
+						端前端前端前端前端前端前端前端前端前端前端前端端前端前端前端前端前端
+					</p>
+					
+				</section>
+			</aside>
+			<aside id="right">
+				<div>
+					<img src="img/task_2.jpg" />
+				</div>
+				<div id="text_are">
+					<ul>
+						<li>
+							<img src="img/task_3.jpg" />
+							前端前端前端前端前端前端 ..................<span>前端</span></li>
+						<li>
+							<img src="img/task_3.jpg" />
+							前端前端前端前端 .........................<span>前端前</span></li>
+						<li>
+							<img src="img/task_3.jpg" />
+							前端前端前端前端前端前端前端 ..............<span>前端</span></li>
+					</ul>
+				<div id="red_font">
+					<div>
+						<img src="img/task_4.jpg" />
+					</div>
+					<div>
+						<span class="pos_0">"</span>
+						<p>
+							world hello world
+							hello world hello world
+							hello world hello world
+							hello world hello world
+							hello world hello world
+							hello world 
+							
+						</p>
+						<span class="pos_1"> "</span>
+					</div>
+				</div>
+				</div>
+			</aside>
+		</section>
+		<div class="cl"></div>
+		<footer>
+			<div id="border_footer"></div>
+			<span>ife.baidu.com</span>
+		</footer>
+	</body>
+</html>
