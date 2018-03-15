@@ -42,6 +42,10 @@
 			margin: 15px 0 15px 20px;
 		}
 		
+		header h1 span {
+			display: none;
+		}
+		
 		header a {
 			text-decoration:none ;
 			color: #FFFFFF;
@@ -52,7 +56,7 @@
 			color: #adadad;
 		}
 		
-		section,
+		article,
 		aside {
 			max-width: 80%;
 			margin: 20px auto;
@@ -61,7 +65,7 @@
 			box-shadow: 3px 3px 2px rgba(0,0,0,.4);
 		}
 		
-		section {
+		article {
 			margin-right: 5px;
 		}
 		
@@ -77,11 +81,11 @@
 			font-weight: 600;
 		}
 		
-		section ul {
+		article ul {
 			list-style: none;
 		}
 		
-		section div {
+		article div {
 			border: 1px solid rgba(0,0,0,.5);
 			padding: 10px;
 			width: 98px;
@@ -93,17 +97,17 @@
 			text-align: center;
 		}
 		
-		section ol {
+		article ol {
 			font-weight: 600;
 			line-height: 30px;
 		}
 		
-		section table {
+		article table {
 			background-color: #d8d8d8;
 			font-size: 14px;
 		}
 		
-		section td {
+		article td {
 			width: 500px;
 			text-align: left;
 			background-color: white;
@@ -174,11 +178,16 @@
 			border: none;
 		}
 		
-		#img_show_box div {
+		#img_show_box figure {
 			display: flex;
+			flex-shrink: 1;
 			flex-direction:column ;
 			justify-content: center;
 			align-items: center;
+			border: 1px solid rgba(0,0,0,.5);
+			padding: 10px;
+			width: 98px;
+			margin: 30px;
 		}
 		
 		footer {
@@ -188,6 +197,7 @@
 			height: 100px;
 			color: #FFFFFF;
 			text-align: center;
+			padding-top: 20px;
 		}
 		
 		#flex_show_box,
@@ -214,136 +224,152 @@
 	</head>
 	<body>
 		<header>
-			<h1></h1>
-			<ul>
-				<li>
-					<a href="#">导航链接1</a>
-				</li>
-				<li>
-					<a href="#">导航链接2</a>
-				</li>
-				<li>
-					<a href="#">导航链接3</a>
-				</li>
-				<li>
-					<a href="#">导航链接4</a>
-				</li>
-			</ul>
+			<h1>
+				<span>百度搜索</span>
+			</h1>
+			<nav>
+				<ul>
+					<li>
+						<a href="#">导航链接1</a>
+					</li>
+					<li>
+						<a href="#">导航链接2</a>
+					</li>
+					<li>
+						<a href="#">导航链接3</a>
+					</li>
+					<li>
+						<a href="#">导航链接4</a>
+					</li>
+				</ul>
+			</nav>
 			<div class="clear"></div>
 		</header>
 		<div id="flex_show_box">
 			<div id="left_show_box">
-				<section>
+				<article>
 					<h1>文章一级标题</h1>
 					<h2>文章二级标题</h2>
 					<hgroup>文章作者 文章发表时间</hgroup>
-					<p>
-						这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落
-						这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落换行了<br>
-						这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落
-						这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落
-						这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落
-					</p>
-					<p>
-						这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落换行了<br>
-						这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落
-						这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落
-						这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落
-					</p>
-					<p>
-						这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落
-						这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落
-						<a href="http://www.w3school.com.cn/tags/tag_textarea.asp">这里有一个链接链接到W3C</a>
-						<strong>这里有个粗体字</strong>这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落
-					</p>
-					<img src="img/timg.jpg">
-					<p>
-						这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落
-						这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落换行了<br>
-						这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落
-						这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落
-						<strong>这里有个粗体字</strong>
-						<a href="http://www.w3school.com.cn/tags/tag_textarea.asp" target="_blank">
-							这里有个链接外跳到W3C
-						</a>
-						这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落
-					</p>
-				</section>
-				<section>
+					<section>
+						<p>
+							这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落
+							这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落换行了<br>
+							这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落
+							这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落
+							这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落
+						</p>
+						<p>
+							这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落换行了<br>
+							这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落
+							这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落
+							这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落
+						</p>
+						<p>
+							这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落
+							这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落
+							<a href="http://www.w3school.com.cn/tags/tag_textarea.asp">这里有一个链接链接到W3C</a>
+							<strong>这里有个粗体字</strong>这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落
+						</p>
+					</section>
+					<figure>
+						<img src="img/timg.jpg">
+					</figure>
+					<section>
+						<p>
+							这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落
+							这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落换行了<br>
+							这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落
+							这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落
+							<strong>这里有个粗体字</strong>
+							<a href="http://www.w3school.com.cn/tags/tag_textarea.asp" target="_blank">
+								这里有个链接外跳到W3C
+							</a>
+							这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落
+						</p>
+					</section>
+				</article>
+				<article>
 					<h1>另一个文章的一级标题</h1>
 					<h2>文章的二级标题</h2>
 					<hgroup>文章作者 文章发表时间</hgroup>
-					<p>
-						这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落
-						这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落<br>换行了
-						这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落
-					</p>
-					<p>
-						这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落
-						这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落
-						这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落<br>换行了
-					</p>
-					<p>
-						这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落
-						这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落
-						<a href="http://www.w3school.com.cn/tags/tag_textarea.asp">这里有一个链接到W3C</a>
-						这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落<strong>这里有个粗体字</strong>
-						这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落
-						这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落
-					</p>
-					<img src="img/timg.jpg">
-					<ul>
-						<li>项目列表1</li>
-						<li>项目列表2</li>
-						<li>项目列表3</li>
-					</ul>
-				</section>
-				<section >
+					<section>
+						<p>
+							这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落
+							这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落<br>换行了
+							这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落
+						</p>
+						<p>
+							这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落
+							这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落
+							这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落<br>换行了
+						</p>
+						<p>
+							这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落
+							这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落
+							<a href="http://www.w3school.com.cn/tags/tag_textarea.asp">这里有一个链接到W3C</a>
+							这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落<strong>这里有个粗体字</strong>
+							这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落
+							这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落这是一段很长很长的段落
+						</p>
+					</section>
+					<figure>
+						<img src="img/timg.jpg">
+					</figure>
+					<section>
+						<ul>
+							<li>项目列表1</li>
+							<li>项目列表2</li>
+							<li>项目列表3</li>
+						</ul>
+					</section>
+				</article>
+				<article >
 					<h1>图片</h1>
 					<div id="img_show_box">
-					<div>
-						<h6>绝望的气息</h6>
-						<img src="img/zetsubou.jpg" />
+						<figure>
+							<h6>绝望的气息</h6>
+							<img src="img/zetsubou.jpg" />
+						</figure>
+						<figure>
+							<h6>绝望的气息</h6>
+							<img src="img/zetsubou.jpg" />
+						</figure>
+						<figure>
+							<h6>绝望的气息</h6>
+							<img src="img/zetsubou.jpg" />
+						</figure>
+						<figure>
+							<h6>绝望的气息</h6>
+							<img src="img/zetsubou.jpg" />
+						</figure>
+						<figure>
+							<h6>绝望的气息</h6>
+							<img src="img/zetsubou.jpg" />
+						</figure>
+						<figure>
+							<h6>绝望的气息</h6>
+							<img src="img/zetsubou.jpg" />
+						</figure>
+						<figure>
+							<h6>绝望的气息</h6>
+							<img src="img/zetsubou.jpg" />
+						</figure>
+						<figure>
+							<h6>绝望的气息</h6>
+							<img src="img/zetsubou.jpg" />
+						</figure>
+						<figure>
+							<h6>绝望的气息</h6>
+							<img src="img/zetsubou.jpg" />
+						</figure>
+						<figure>
+							<h6>绝望的气息</h6>
+							<img src="img/zetsubou.jpg" />
+						</figure>
 					</div>
-					<div>
-						<h6>绝望的气息</h6>
-						<img src="img/zetsubou.jpg" />
-					</div>
-					<div>
-						<h6>绝望的气息</h6>
-						<img src="img/zetsubou.jpg" />
-					</div>
-					<div>
-						<h6>绝望的气息</h6>
-						<img src="img/zetsubou.jpg" />
-					</div>
-					<div>
-						<h6>绝望的气息</h6>
-						<img src="img/zetsubou.jpg" />
-					</div>
-					<div>
-						<h6>绝望的气息</h6>
-						<img src="img/zetsubou.jpg" />
-					</div>
-					<div>
-						<h6>绝望的气息</h6>
-						<img src="img/zetsubou.jpg" />
-					</div>
-					<div>
-						<h6>绝望的气息</h6>
-						<img src="img/zetsubou.jpg" />
-					</div>
-					<div>
-						<h6>绝望的气息</h6>
-						<img src="img/zetsubou.jpg" />
-					</div>
-					<div>
-						<h6>绝望的气息</h6>
-						<img src="img/zetsubou.jpg" />
-					</div>
-					</div>
-				</section>
-				<section>
+				</article>
+				<article>
 					<h1>最后一篇文章的一级标题</h1>
 					<h2>文章的二级标题</h2>
 					<hgroup>文章作者 文章发表时间</hgroup>
@@ -354,38 +380,40 @@
 					</ol>
 					<span>下面是一个表格</span>
 					<table>
-						<tr>
+						<thead>
 							<td class="table_head">表头</td>
 							<td class="table_head">表头</td>
 							<td class="table_head">表头</td>
-						</tr>
-						<tr>
-							<td>表内容单元格</td>
-							<td>表内容单元格</td>
-							<td>
-								<a href="#">操作</a>
-							</td>
-						</tr>
-						<tr>
-							<td>表内容单元格</td>
-							<td>表内容单元格</td>
-							<td>
-								<a href="#">操作</a>
-							</td>
-						</tr>
-						<tr>
-							<td>表内容单元格</td>
-							<td>表内容单元格</td>
-							<td>
-								<a href="#">操作</a>
-							</td>
-						</tr>
-						<tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>表内容单元格</td>
+								<td>表内容单元格</td>
+								<td>
+									<a href="#">操作</a>
+								</td>
+							</tr>
+							<tr>
+								<td>表内容单元格</td>
+								<td>表内容单元格</td>
+								<td>
+									<a href="#">操作</a>
+								</td>
+							</tr>
+							<tr>
+								<td>表内容单元格</td>
+								<td>表内容单元格</td>
+								<td>
+									<a href="#">操作</a>
+								</td>
+							</tr>
+						</tbody>
+						<tfoot>
 							<td class="table_foot">总计</td>
 							<td colspan="2" class="table_foot">1000</td>
-						</tr>
+						</tfoot>
 					</table>
-				</section>
+				</article>
 			</div>
 			<div id="right_show_box">
 				<aside>
