@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta charset="UTF-8">
+		<title>新世界</title>
+		<link href="https://cdn.bootcss.com/normalize/7.0.0/normalize.css" rel="stylesheet">
+		<style type="text/css">
+			body {
+				max-width: 1280px;
+				margin: 0 auto;
+			}
+			
+			figure {
+				margin-left: 0;
+			}
+			
+			header {
+				max-height: 100%;
+				height: 55px;
+				display: flex;
+				justify-content: space-between;
+			}
+			
+			header ul {
+				margin-top: 24px;
+				width: 400px;
+				list-style: none;
+				display: flex;
+				justify-content: space-around;
+			}
+			
+			header div {
+				display: flex;
+			}
+			
+			header li {
+				display: block;
+			}
+			
+			nav a {
+				font-size: 14px;
+				font-family: Microsoft YaHei;
+				color: #787b83;
+				text-decoration: none;				
+			}
+			
+			nav a:hover {
+				color: #e74f4d;
+				padding-bottom: 25px;
+				border-bottom: 3px #e74f4d solid;
+			}
+			
+			.move {
+				margin-left: 50px;
+			}
+			
+			#filmslide {
+				height: 687px;
+				width: 1280px;
+				background-image: url(img/task_7_3.jpg);
+				position: relative;
+			}
+			
+			#filmslide img {
+				position: absolute;
+				left: 125px;
+				top: 426.25px;
+			}
+			
+			#icon_show {
+				display: flex;
+				width: 1280px;
+			}
+			
+			#icon_show div {
+				display: flex;
+				justify-content: center;
+				-webkit-justify-content: center;
+				align-items: center;
+				-webkit-align-items: center;
+			}
+			
+			#icon_show p {
+				display: block;
+				color: rgba(0,0,0,.6);
+				display: flex;
+				text-align: center;
+			}
+			
+			.incon_text {
+				border-right: 2px solid rgba(0,0,0,.3);
+				padding:0 30px;
+			}
+			
+			#to_find {
+				margin-top: 0;
+				height: 324px;
+				width: 1280px;
+				background-image: url(img/task_7_find.jpg);
+				position: relative;
+				margin-bottom: 0;
+			}
+			
+			#to_find form {
+				display: flex;
+				width: 1200px;
+				justify-content: space-around;
+				-webkit-justify-content: space-around;
+				position: absolute;
+				top: 230px;
+				left: 40px;
+			}
+			
+			#to_find select {
+				width: 250px;
+				padding: 5px;
+				color: rgba(0,0,0,.4);
+				box-shadow: 1px 0px 5px rgba(255,0,0,.3);
+			}
+			
+			#to_find button {
+				width: 250px;
+				background-color: #be4e48;
+				border: none;
+				color: #FFF;
+				font-weight: bold;
+			}
+			
+			#photo_show {
+				height: 600px;
+				width: 1280px;
+				background-color: #f7f7f7;
+				margin-top: 0;
+				display: flex;
+				justify-content: center;
+				-webkit-justify-content: center;
+				align-items: center;
+				-webkit-align-items: center;
+				text-align: center;
+			}
+			
+			#photo_show h3 {
+				font-weight: normal;
+				font-size: 14px;
+			}
+			
+			#photo_show p {
+				color: rgba(0,0,0,.4);
+				font-size: 12px;
+			}
+			
+			#text_shoukai {
+				display: flex;
+				text-align: center;
+			}
+			
+			#text_shoukai h1 {
+				font-size: 20px;
+				font-weight: 500;
+			}
+			
+			#text_shoukai span {
+				color: #e74f4d;
+			}
+			
+			#text_shoukai p {
+				font-size: 12px;
+				font-family: simsun;
+				color: #aaaaaa;
+				line-height: 20px;
+				display: block;
+				padding: 0 50px;
+			}
+			
+			#text_shoukai a {
+				color: #e74f4d;
+				text-decoration: none;
+			}
+			
+			#text_shoukai section {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+			}
+			
+			.look {
+				border: 1px solid #E74F4D;
+				width: 100px;
+				height: 25px;
+				font-size: 14px;
+				line-height: 25px;
+				margin-top: 50px;
+			}
+			
+			.dian {
+				display: flex;
+			}
+			
+			.dian div {
+				border-radius: 50%;
+				width: 10px;
+				height: 10px;
+				border: 2px solid rgba(0,0,0,.4);
+				margin: 30px 10px 0 10px;
+			}
+			
+			.in_it {
+				background-color: rgba(0,0,0,.4);
+			}
+			
+			#last_list {
+				width: 1280px;
+				margin: -5px 0 0 0;
+				display: flex;
+			}
+			
+			#news {
+				width: 300px;
+				margin-left: 150px;
+				position: relative;
+				margin-right: 100px;
+			}
+			
+			#news img {
+				position: absolute;
+				right: 0;
+			}
+			
+			#news h1 {
+				font-size: 16px;
+				opacity: .8;
+			}
+			
+			#news p {
+				font-size: 12px;
+				color: rgba(0,0,0,.4);
+				line-height: 16px;
+				letter-spacing: 1px;
+			}
+			
+			#under_show {
+				display: flex;
+			}
+			
+			#input_box {
+				width: 682px;
+			}
+			
+			#input_box input,
+			#input_box textarea,
+			#index_box button {
+				background-color: #ededee;
+				border: none;
+				border-radius: 3px;
+				padding: 10px;
+			}
+			
+			#input_box input {
+				width: 300px;
+				margin: 5px;
+			}
+			
+			#input_box textarea {
+				margin-left: 5px;
+			}
+			
+			.submit {
+				width: 653px !important;
+			}
+			
+			footer {
+				margin-top: 200px;
+				background-image: url(img/task_7_footer.jpg);
+				height: 416px;
+				width: 1280px;
+				position: relative;
+			}
+			
+			footer div {
+				display: flex;
+				position: absolute;
+				left: 382px;
+				top: 183px;
+			}
+			
+			.email {
+				padding: 7px;
+				width: 430px;
+				height: 25px;
+				margin: 0;
+			}
+			
+			.submit_1 {
+				border: none;
+				background-color: #6f7178;
+				color: #FFF;
+				font-size: 15px;
+				padding: 9px;
+				margin: 0;
+				width: 80px;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<figure>
+				<img src="img/task_7_1.jpg" class="move" />
+			</figure>
+			<div>
+				<nav>
+					<ul>
+						<li>
+							<a href="#">首页</a>
+						</li>
+						<li>
+							<a href="#">最新活动</a>
+						</li>
+						<li>
+							<a href="#">项目介绍</a>
+						</li>
+						<li>
+							<a href="#">爱心社区</a>
+						</li>
+						<li>
+							<a href="#">关于我们</a>
+						</li>
+					</ul>
+				</nav>
+				<figure>
+					<a href="#">
+						<img src="img/task_7_2.jpg">
+					</a>
+				</figure>
+			</div>
+		</header>
+		<figure id="filmslide">
+			<a href="#">
+				<img src="img/task_7_start.jpg" />
+			</a>
+		</figure>
+		<article id="icon_show">
+			<figure>
+				<div>
+					<img src="img/task_7_icon_0.jpg" />
+				</div>
+				<div class="incon_text">
+					<p>
+						打造全新世界观，让你更爱你的活动
+					</p>
+				</div>
+			</figure>
+			<figure>
+				<div>
+					<img src="img/task_7_icon_1.jpg"  />
+				</div>
+				<div class="incon_text">
+					<p>
+						丰富多彩的公益活动，发挥新世界的主人公意识
+					</p>
+				</div>
+			</figure>
+			<figure>
+				<div>
+					<img src="img/task_7_icon_2.jpg"  />
+				</div>
+				<div class="incon_text">
+					<p>
+						完善的培养机制，培养你全新的世界观
+					</p>
+				</div>
+			</figure>
+			<figure>
+				<div>
+					<img src="img/task_7_icon_3.jpg"  />
+				</div>
+				<div class="incon_text">
+					<p>
+						打造全新世界观，让你更爱你的活动
+					</p>
+				</div>
+			</figure>
+		</article>
+		<figure style="margin-bottom: 0;height: 361px;">
+			<img src="img/task_7_banner.jpg" />
+		</figure>
+		<figure id="to_find">
+			<form>
+				<select>
+					<option selected="selected">中国</option>
+					<option>日本</option>
+					<option>韩国</option>
+					<option>朝鲜</option>
+					<option>美国</option>
+				</select>
+				<select>
+					<option selected="selected">北京</option>
+					<option>东京</option>
+					<option>首尔</option>
+					<option>纽约</option>
+				</select>
+				<select>
+					<option selected="selected">城市</option>
+					<option>……</option>
+				</select>
+				<button type="submit">搜&nbsp;&nbsp; 索</button>
+			</form>
+		</figure>
+		<article id="photo_show">
+			<figure>
+				<img src="img/task_7_photo_0.jpg" />
+				<h3>北京活动</h3>
+				<p>新社区大联盟</p>
+			</figure>
+			<figure>
+				<h3>上海活动</h3>
+				<p>夜上海活动景观探索</p>
+				<img src="img/task_7_photo_1.jpg" />
+			</figure>
+			<figure>
+				<img src="img/task_7_photo_2.jpg" />
+				<h3>深圳活动</h3>
+				<p>全新海岸线观测点</p>
+			</figure>
+			<figure>
+				<img src="img/task_7_photo_3.jpg" />
+				<h3>香港活动</h3>
+				<p>奢侈消费大派送</p>
+			</figure>
+		</article>
+		<article id="text_shoukai">
+			<figure style="margin: 0;">
+				<img src="img/task_7_t.jpg" />
+			</figure>
+			<section>
+				<h1>新世界/<span>01</span></h1>
+				<p>
+					新世界是个新世界新世界是个新世界新世界是个新世界
+					新世界是个新世界新世界是个新世界新世界是个新世界
+					新世界是个新世界新世界是个新世界新世界是个新世界
+					新世界是个新世界新世界是个新世界
+				</p>
+				<section>
+					<div class="look">
+						<span><a href="#">更多详情</a></span>
+					</div>
+					<div class="dian">
+						<div class="in_it"></div>
+						<div></div>
+						<div></div>
+					</div>
+				</section>
+			</section>
+		</article>
+		<figure id="last_list">
+			<img src="img/task_7_x_0.jpg" />
+			<img src="img/task_7_x_1.jpg" />
+			<img src="img/task_7_x_2.jpg" />
+		</figure>
+		<article>
+			<img src="img/task_7_unbanner.jpg" />
+			<div id="under_show">
+				<section id="news">
+					<article>
+						<h1>新世界志愿者协议</h1>
+						<p>
+							加入新世界志愿者的人员必须遵守中华人民共共和国的
+							相关法律法规，并且本着平等资源的原则 ......
+						</p>
+						<img src="img/task_7_more.jpg" />
+					</article>
+					<article>
+						<h1>新世界志愿者协议</h1>
+						<p>
+							加入新世界志愿者的人员必须遵守中华人民共共和国的
+							相关法律法规，并且本着平等资源的原则 ......
+						</p>
+						<img src="img/task_7_more.jpg" />
+					</article>
+					<article>
+						<h1>新世界志愿者权利</h1>
+						<p>
+							新世界志愿者享受新世界内部所有资源共享的权利，并
+							且享受所在四新世界活动的优先参与资格
+						</p>
+						<img src="img/task_7_more.jpg" />
+					</article>
+					<article>
+						<h1>更多条款</h1>
+						<img src="img/task_7_more.jpg" />
+					</article>
+				</section>
+				<section id="input_box">
+					<form>
+						<input type="text" value="姓名：" />
+						<input type="text" value="年龄:" />
+						<input type="text" value="联系方式:" />
+						<input type="text" value="联系地址:" />
+						<textarea rows="10" cols="77">请简单阐释你的梦想生活</textarea>
+						<input type="submit" class="submit"></input>
+					</form>
+				</section>
+			</div>
+		</article>
+		<footer>
+			<div>
+				<input class="email" type="email" placeholder="someone@email.com" />
+				<input type="submit" class="submit_1" value="提交" />
+			</div>
+		</footer>
+	</body>
+</html>
