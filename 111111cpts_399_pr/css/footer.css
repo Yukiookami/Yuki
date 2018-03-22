@@ -1,0 +1,121 @@
+.footer ul {
+    list-style: none;
+    color: rgba(255, 255, 255, .4);
+}
+
+.footer-box {
+	width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-box h5 {
+	font-size: 30px !important;
+}
+
+.footer-social-icons img {
+    margin: 10px;
+}
+
+.footer-social-icons {
+	width: 270px;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.footer-box-text h5 {
+	font-size: 20px !important;
+}
+
+.footer-font {
+    color: rgba(255, 255, 255, .4);
+    margin: 0 auto;
+    font-size: 14px;
+    max-width: 40%;
+    height: 100px;
+    text-align: center;
+}
+
+.social-icons-0 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	width: 280px;
+	height: 120px;
+}
+
+.social-icons-0 img {
+	margin: 20px;
+}
+
+/*客户信息*/
+#connection {
+	padding: 50px 0;
+	margin: 0 auto;
+	max-width: 60%;
+	min-height: 300px;
+	display: flex;
+/*	padding-left: 7%;*/
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+#connection div {
+	margin: 10px 0;
+}
+
+.tittle-show {
+	max-width: 50%;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 80px;
+}
+
+/*数据*/
+#information {
+	display: flex;
+	max-width: 60%;
+	height: 90%;
+	margin: 0 auto;	
+	justify-content: space-around;
+	align-items: center;
+	color: #FFF;
+}
+
+#information section {
+	margin-top: 20px;
+	text-align: center;
+	max-width: 20%;
+}
+
+#information p {
+	font-family: "calisto mt";
+	font-size: 14px;
+}
+
+#information h1 {
+	font-size: 72px;
+}
+
+/*数据盒子*/
+.win-show {
+	height: 300px;
+	max-width: 100%;
+	background-image: url(../images/timg.jpg);
+}
+
+/*幻灯片下文字*/
+#welcome {
+	max-width: 100%;
+	text-align: center;
+	margin-top: 30px;
+}
+
+#welcome h3 {
+	font-size: 60px;
+	font-weight: normal;
+}
+
+
