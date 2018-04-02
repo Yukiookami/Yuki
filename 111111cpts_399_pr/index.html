@@ -34,6 +34,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       color:#000;
       margin: 0;
       padding: 0;
+      -webkit-font-smoothing: antialiased;/*字体抗锯齿*/
     }
     .swiper-container {
       width: 100%;
@@ -166,12 +167,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 	</div>
 <!-- 幻灯片 -->
-  <div class="swiper-container">
+  <figure class="swiper-container">
     <div class="swiper-wrapper">
-      <div class="swiper-slide"><img src="images/1.jpg"></div>
-      <div class="swiper-slide"><img src="images/10.jpg"></div>
-      <div class="swiper-slide"><img src="images/11.jpg"></div>
-	  <div class="swiper-slide"><img src="images/8.jpg"></div>
+      <div class="swiper-slide"><img src="images/banner_1.jpg"></div>
+      <div class="swiper-slide"><img src="images/banner_2.jpg"></div>
+      <div class="swiper-slide"><img src="images/banner_3.jpg"></div>
+	  <div class="swiper-slide"><img src="images/banner_4.jpg"></div>
      <!-- <div class="swiper-slide">Slide 5</div>
       <div class="swiper-slide">Slide 6</div>
       <div class="swiper-slide">Slide 7</div>
@@ -184,7 +185,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <!-- Add Arrows -->
     <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div>
-  </div>
+  </figure>
 
   <!-- Swiper JS -->
   <script src="js/swiper.min.js"></script>
@@ -206,6 +207,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
+      loop: true
     });
   </script>
 <div class="copyrights">Collect from <a href="http://www.cssmoban.com/" >网页模板</a></div>
@@ -218,12 +220,170 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		 of brand label and packing service.
 	</p>
 </article>
-<div id="cate" class="categories">
+<!-- 数据 -->
+<figure class="win-show">
+	<article id="information">
+		<section>
+			<h1>12</h1>
+			<p>
+				Over 12 years of industry experience, 
+				we can quickly understand the needs of clients, 
+				find neglected details, control quality and delivery time, and provide clients with the best solution.
+			</p>
+		</section>
+		<section>
+			<h1>31</h1>
+			<p>
+				As of 2017, our clients are in 31 countries and regions, 
+				including the United States, Canada, Australia and Europe.
+			</p>
+		</section>
+		<section>
+			<h1>110</h1>
+			<p>
+				By 2017, we have served more than 110 global clients.
+				Our philosophy is customer first, best service, 
+				which makes us the best partner for clients in China.
+			</p>
+		</section>
+	</article>
+</figure>
+<!-- news -->
+	<article class="news" id="blog">
+		<div class="container">
+			<section class="news-head text-center">
+				<h3>New Products</h3>
+				<!--<p>Cras porttitor imperdiet volutpat nulla malesuada lectus eros ut convallis felis consectetur ut</p>-->
+			</section>
+			<section class="news-grids flex-show" style="text-align: center;">
+				<figure class="col-md-3 news-grid">
+					<div style="height: 260px !important; display: flex; align-items: center;">
+						<a class="mask" href="single.html"><img src="images/1.png" class="img-responsive zoom-img" alt="" /></a>
+					</div>
+					<a href="single.html">Accessories</a>
+					<!--<div class="news-info">
+						<p>Pellentesque ut urna eu mauris scele risque auctor volutpat et massa pers piciis iste natus scele risque auctor volutpat et massa.</p>
+						<a class="button" href="single.html"><img src="images/read.png" alt=""></a>
+					</div>-->
+				</figure>
+				<figure class="col-md-2 news-grid">
+					<div style="height: 260px !important; display: flex; align-items: center;">
+						<a class="mask" href="single.html"><img src="images/2.png" class="img-responsive zoom-img" alt="" /></a>
+					</div>
+					<a href="single.html">leather label</a>
+				</figure>
+				<figure class="col-md-2 news-grid">
+					<div style="height: 260px !important; display: flex; align-items: center;">
+						<a class="mask" href="single.html"><img src="images/3.png" class="img-responsive zoom-img" alt="" /></a>
+					</div>
+					<a href="single.html">Hang tag</a>
+				</figure>
+				<figure class="col-md-2 news-grid">
+					<div style="height: 260px !important; display: flex; align-items: center;">
+						<a class="mask" href="single.html"><img src="images/4.png" class="img-responsive zoom-img" alt="" /></a>
+					</div>
+					<a href="single.html">Embroidered patch</a>
+				</figure>
+				<figure class="col-md-3 news-grid">
+					<div style="height: 260px !important; display: flex; align-items: center;">
+						<a class="mask" href="single.html"><img src="images/5.png" class="img-responsive zoom-img" alt="" /></a>
+					</div>
+					<a href="single.html">Packaging</a>
+				</figure>
+				<figure class="col-md-3 news-grid">
+					<div style="height: 260px !important; display: flex; align-items: center;">
+						<a class="mask" href="single.html"><img src="images/6.png" class="img-responsive zoom-img" alt="" /></a>
+					</div>
+					<a href="single.html">pin &amp; badge</a>
+				</figure>
+				<figure class="col-md-2 news-grid">
+					<div style="height: 260px !important; display: flex; align-items: center;">
+						<a class="mask" href="single.html"><img src="images/7.png" class="img-responsive zoom-img" alt="" /></a>
+					</div>
+					<a href="single.html">Rubber patch</a>
+				</figure>
+				<figure class="col-md-2 news-grid">
+					<div style="height: 260px !important; display: flex; align-items: center;">
+						<a class="mask" href="single.html"><img src="images/8.png" class="img-responsive zoom-img" alt="" /></a>
+					</div>
+					<a href="single.html">woven label</a>
+				</figure>
+				<figure class="col-md-2 news-grid">
+					<div style="height: 260px !important; display: flex; align-items: center;">
+						<a class="mask" href="single.html"><img src="images/9.png" class="img-responsive zoom-img" alt="" /></a>
+					</div>
+					<a href="single.html">Printing label</a>
+				</figure>
+				<figure class="col-md-3 news-grid">
+					<div style="height: 260px !important; display: flex; align-items: center;">
+						<a class="mask" href="single.html"><img src="images/10.png" class="img-responsive zoom-img" alt="" /></a>
+					</div>
+					<a href="single.html">tag string</a>
+				</figure>
+				<div class="clearfix"> </div>
+			</section>
+		</div>
+	</article>
+	<!-- //news -->
+
+<!-- //testimonials -->
+
+	<!-- 评价 -->
+	<div class="second-slider">
+	<div class="container">
+	<h3 class="tes text-center">Evaluate</h3>
+		<div  id="top" class="callbacks_container">
+					<ul class="rslides" id="slider4">
+						<li>
+							<div class="sec-slid-info text-center">
+								<img src="images/mem1.jpg" alt="" />
+								<h4>" great" 
+									See what our customers say.</h4>
+								<p>
+									They just arrived to me! Thank you so much Charles,
+									 they are Exactly what I wanted . Please add me as friend 
+									 I will definitely work with you in the future :)<br />
+									 ---- Alirayan helmi, IMMORTAL MILITIA, US
+								</p>
+							</div>
+						</li>
+						<li>
+							<div class="sec-slid-info text-center">
+								<img src="images/mem2.jpg" alt="" />
+								<h4>" great" 
+									See what our customers say.</h4>
+								<p>
+									I would like to say thank you. i recieved the labels and everything today.
+									Wow they came out so nice. 
+									I really apprecaite this and i look forward to doing more business with you.
+									 Thanks again Charles.<br />
+									 ---- Ricky Howard, Ailip, USA
+								</p>
+							</div>
+						</li>
+						<li>
+							<div class="sec-slid-info text-center">
+								<img src="images/mem3.jpg" alt="" />
+								<h4>" great" 
+									See what our customers say.</h4>
+								<p>
+									I have received the product and I am very satisfied with it.
+									Great job! I will definitely recommend you and I
+									 look forward to doing business with you again.<br />
+									 ---- Isatu, Statuesque, UK
+								</p>
+							</div>
+						</li>
+					</ul>
+		</div>
+	</div>
+</div>	
+<article id="cate" class="categories">
 	 <div class="container">
 		<div class="cat-head">
 			<h3>Latest Designs</h3>
 		</div>
-		 <div class="categorie-grids cs-style-1">
+		 <section class="categorie-grids cs-style-1">
 				 <div class="col-md-4 cate-grid grid">
 					<figure>
 						<img src="images/c1.jpg" alt="">
@@ -291,155 +451,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				 </div>
 
 			 <div class="clearfix"></div>
-		 </div>
+		 </section>
 	 </div>
-</div>
+</article>
 <!--//latest designs-->
-<!-- 数据 -->
-<div class="win-show">
-	<article id="information">
-		<section>
-			<h1>12</h1>
-			<p>
-				Over 12 years of industry experience, 
-				we can quickly understand the needs of clients, 
-				find neglected details, control quality and delivery time, and provide clients with the best solution.
-			</p>
-		</section>
-		<section>
-			<h1>31</h1>
-			<p>
-				As of 2017, our clients are in 31 countries and regions, 
-				including the United States, Canada, Australia and Europe.
-			</p>
-		</section>
-		<section>
-			<h1>110</h1>
-			<p>
-				By 2017, we have served more than 110 global clients.
-				Our philosophy is customer first, best service, 
-				which makes us the best partner for clients in China.
-			</p>
-		</section>
-	</article>
-</div>
-<!-- //testimonials -->
-<!-- news -->
-	<div class="news" id="blog">
-		<div class="container">
-			<div class="news-head text-center">
-				<h3>Our Blog</h3>
-				<p>Cras porttitor imperdiet volutpat nulla malesuada lectus eros ut convallis felis consectetur ut</p>
-			</div>
-			<div class="news-grids">
-				<div class="col-md-4 news-grid">
-					<a href="single.html">Interior design article post</a>
-					<span>Posted by <a class="admin" href="#">Admin</a>on 09 JUN 2015</span>
-					<a class="mask" href="single.html"><img src="images/img1.jpg" class="img-responsive zoom-img" alt="" /></a>
-					<div class="news-info">
-						<p>Pellentesque ut urna eu mauris scele risque auctor volutpat et massa pers piciis iste natus scele risque auctor volutpat et massa.</p>
-						<a class="button" href="single.html"><img src="images/read.png" alt=""></a>
-					</div>
-				</div>
-				<div class="col-md-4 news-grid">
-					<a href="single.html">Interior design article post</a>
-					<span>Posted by <a class="admin" href="#">Admin</a>on 24 SEP 2015</span>
-					<a class="mask" href="single.html"><img src="images/img2.jpg" class="img-responsive zoom-img" alt="" /></a>
-					<div class="news-info">
-						<p>Pellentesque ut urna eu mauris scele risque auctor volutpat et massa pers piciis iste natus scele risque auctor volutpat et massa.</p>
-						<a class="button" href="single.html"><img src="images/read.png" alt=""></a>
-					</div>
-				</div>
-				<div class="col-md-4 news-grid">
-					<a href="single.html">Interior design article post</a>
-					<span>Posted by <a class="admin" href="#">Admin</a>on 15 FEB 2015</span>
-					<a class="mask" href="single.html"><img src="images/img3.jpg" class="img-responsive zoom-img" alt="" /></a>
-					<div class="news-info">
-						<p>Pellentesque ut urna eu mauris scele risque auctor volutpat et massa pers piciis iste natus scele risque auctor volutpat et massa.</p>
-						<a class="button" href="single.html"><img src="images/read.png" alt=""></a>
-					</div>
-				</div>
-				<div class="col-md-4 news-grid">
-					<a href="single.html">Interior design article post</a>
-					<span>Posted by <a class="admin" href="#">Admin</a>on 10 JUN 2015</span>
-					<a class="mask" href="single.html"><img src="images/img4.jpg" class="img-responsive zoom-img" alt="" /></a>
-					<div class="news-info">
-						<p>Pellentesque ut urna eu mauris scele risque auctor volutpat et massa pers piciis iste natus scele risque auctor volutpat et massa.</p>
-						<a class="button" href="single.html"><img src="images/read.png" alt=""></a>
-					</div>
-				</div>
-				<div class="col-md-4 news-grid">
-					<a href="single.html">Interior design article post</a>
-					<span>Posted by <a class="admin" href="#">Admin</a>on 09 JUN 2015</span>
-					<a class="mask" href="single.html"><img src="images/img1.jpg" class="img-responsive zoom-img" alt="" /></a>
-					<div class="news-info">
-						<p>Pellentesque ut urna eu mauris scele risque auctor volutpat et massa pers piciis iste natus scele risque auctor volutpat et massa.</p>
-						<a class="button" href="single.html"><img src="images/read.png" alt=""></a>
-					</div>
-				</div>
-				<div class="col-md-4 news-grid">
-					<a href="single.html">Interior design article post</a>
-					<span>Posted by <a class="admin" href="#">Admin</a>on 24 SEP 2015</span>
-					<a class="mask" href="single.html"><img src="images/img2.jpg" class="img-responsive zoom-img" alt="" /></a>
-					<div class="news-info">
-						<p>Pellentesque ut urna eu mauris scele risque auctor volutpat et massa pers piciis iste natus scele risque auctor volutpat et massa.</p>
-						<a class="button" href="single.html"><img src="images/read.png" alt=""></a>
-					</div>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-		</div>
-	</div>
-	<!-- //news -->
-	<!-- 评价 -->
-	<div class="second-slider">
-	<div class="container">
-	<h3 class="tes text-center">Evaluate</h3>
-		<div  id="top" class="callbacks_container">
-					<ul class="rslides" id="slider4">
-						<li>
-							<div class="sec-slid-info text-center">
-								<img src="images/youjian-33_djv4.jpg" alt="" />
-								<h4>" great" 
-									See what our customers say.</h4>
-								<p>
-									Customer's recognition, is the best proof of qualification.
-									By our service, you will find, everything becomes simple, 
-									high quality, a lot of time, energy and costs are saved, 
-									feel so happy!
-								</p>
-							</div>
-						</li>
-						<li>
-							<div class="sec-slid-info text-center">
-								<img src="images/youjian-55_5foy.jpg" alt="" />
-								<h4>" great" 
-									See what our customers say.</h4>
-								<p>
-									Customer's recognition, is the best proof of qualification.
-									By our service, you will find, everything becomes simple, 
-									high quality, a lot of time, energy and costs are saved, 
-									feel so happy!
-								</p>
-							</div>
-						</li>
-						<li>
-							<div class="sec-slid-info text-center">
-								<img src="images/youjian-66_xdnr.jpg" alt="" />
-								<h4>" great" 
-									See what our customers say.</h4>
-								<p>
-									Customer's recognition, is the best proof of qualification.
-									By our service, you will find, everything becomes simple, 
-									high quality, a lot of time, energy and costs are saved, 
-									feel so happy!
-								</p>
-							</div>
-						</li>
-					</ul>
-		</div>
-	</div>
-</div>	
 	<!-- 客户信息 -->
 	<section class="tittle-show">
 		<h1>Our custom​ers</h1>
@@ -486,7 +501,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 	</figure>
 		<!-- footer-section -->
-	<div class="footer">
+	<footer class="footer">
 		<div class="footer-top">
 			<div class="container footer-box">
 				<section>
@@ -557,11 +572,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<p>
 					Copyright©2008-2016 YIMA.All Right Reserved.Yima garment accessories all rights reserved.
 					All kinds ofhang tags&woven labels.Best quality&price&service.Clothing labels on-shop shopping.
-					All the samples for reference only.Not for selling,production and other buesiness.
+					All the samples for reference only.Not for selling,	production and other buesiness.
 				</p>
 			</section>
 		</div>
-	</div>
+	</footer>
 	<!-- //footer-section -->
 </body>
 </html>
