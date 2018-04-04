@@ -1749,7 +1749,7 @@ ul.contact_info span {
 /*-- responsine-design --*/
 @media screen and (max-width: 1440px) {	
 	.second-slider:before {
-		top: -20.8%;
+		top: -19.6%;
 	}
 	.second-slider:after {
 		top: 100.12%;
@@ -1772,7 +1772,7 @@ ul.contact_info span {
 		padding: 1.8em 0;
 	}
 	.second-slider:before {
-		top: -20.5%;
+		top: -19.3%;
 	}
 }
 @media screen and (max-width: 1280px) {		
@@ -1852,7 +1852,7 @@ ul.contact_info span {
 		width: 7.4%;
 	}
 	.second-slider:before {
-		top: -23.5%;
+		top: -19.8%;
 	}
 	h2.heading {
 		font-size: 3.8em;
@@ -1994,7 +1994,7 @@ ul.contact_info span {
 		font-size: 2em;
 	}	
 	.second-slider:before {
-		top: -26.5%;
+		top: -23%;
 	}
 	h2.heading {
 		font-size: 3.6em;
