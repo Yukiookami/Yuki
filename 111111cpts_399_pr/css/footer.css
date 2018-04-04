@@ -80,18 +80,16 @@
 /*数据*/
 #information {
 	display: flex;
-	max-width: 60%;
-	height: 90%;
-	margin: 0 auto;	
 	justify-content: space-around;
 	align-items: baseline;
 	color: #FFF;
+	flex-wrap: wrap;
 }
 
 #information section {
 	margin-top: 20px;
 	text-align: center;
-	max-width: 20%;
+	width: 400px;
 }
 
 #information p {
@@ -100,16 +98,16 @@
 }
 
 #information h1 {
-	font-size: 148px;
+	font-size: 10em;
 }
 
 /*数据盒子*/
 .win-show {
-	height: 500px;
+	min-height: 500px;
 	max-width: 100%;
 	margin-top: 30px;
 	background-image: url(../images/timg.jpg);
-	padding-top: 4%;
+	padding-top: 6%;
 }
 
 /*幻灯片下文字*/
