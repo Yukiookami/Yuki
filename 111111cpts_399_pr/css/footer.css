@@ -60,10 +60,11 @@
 /*	padding-left: 7%;*/
 	align-items: center;
 	flex-wrap: wrap;
+	justify-content: space-between;
 }
 
 #connection img {
-	 width: 8vw;
+	 width: 8rem;
 }
 
 #connection div {
@@ -126,5 +127,9 @@
 .flex-show {
 	display: flex;
 	flex-wrap: wrap;	
+	padding-bottom: 40px;
 }
 
+.container {
+	min-height: 335px;
+}
