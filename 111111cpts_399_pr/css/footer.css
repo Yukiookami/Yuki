@@ -1,3 +1,4 @@
+/*页脚代码*/
 .footer ul {
     list-style: none;
     color: rgba(255, 255, 255, .4);
@@ -50,6 +51,10 @@
 	margin: 20px;
 }
 
+.footer-text-list ul {
+	list-style: none;
+	color: rgba(255, 255, 255, .4)
+}
 /*客户信息*/
 #connection {
 	padding: 50px 0;
@@ -119,7 +124,7 @@
 }
 
 #welcome h3 {
-	font-size: 60px;
+	font-size: 4rem;
 	font-weight: normal;
 }
 
