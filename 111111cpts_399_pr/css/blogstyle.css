@@ -1,0 +1,69 @@
+/*blog新闻区域*/
+.information-mid {
+    width: 65%;
+    margin: 0 auto;
+}
+
+.information-mid figure {
+    margin: 0;
+    padding: 0;
+}
+
+.head {
+    width: 49px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+#news-box ul {
+    list-style: none;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.information-mid h2 {
+    font-size: 2.5rem;
+    margin: 20px 0;
+    padding: 0;
+    line-height: 40px;
+}
+
+.news-sec {
+    margin-bottom: 20px;
+}
+
+#news-box {
+    padding-top: 35px;
+}
+
+.text-aere img {
+    margin-bottom: 20px;
+}
+
+.link-text {
+    font-size: 1.3rem;
+}
+
+.password-box span{
+    font-size: 2.5rem;
+}
+
+.password-box input[type=password],
+.password-box button[type=submit] {
+    margin: 10px 10px 0 0;
+    height: 40px;
+}
+
+.password-box button[type=submit] {
+    color: #FFF;
+    border: none;
+    background-color: #000;
+    font-size: 1.5rem;
+}
+
+.password-word {
+    font-size: 2rem !important;
+    line-height: 30px;
+    color: rgba(0, 0, 0, .5)
+}

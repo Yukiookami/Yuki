@@ -675,7 +675,7 @@ a.callbacks_nav.callbacks2_nav.next {
     background-size: 100% 100%;
     height: 79px;
     z-index: 9;
-    top: -19.6%;
+    top: -19.5%;
     width: 100%;
     transform: rotate(180deg);
 	-webkit-transform: rotate(180deg);
@@ -1216,7 +1216,7 @@ div#myTabContent {
 /*--gallery-Part-Ends-Here --*/
 /*--single-page--*/
 .single-page{
-  padding:5em 0;
+  padding-bottom: 5em;
 }
 .sngl-title h3 a {
   text-decoration: none;
