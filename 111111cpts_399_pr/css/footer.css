@@ -16,18 +16,14 @@
 }
 
 .footer-social-icons img {
-    margin: 10px;
+    margin: 0 10px 10px 0;
 }
 
 .footer-social-icons {
 	width: 270px;
-	display: flex;
+	/* display: flex;
 	justify-content: space-around;
-	flex-wrap: wrap;
-}
-
-.footer-box-text h5 {
-	font-size: 20px !important;
+	flex-wrap: wrap; */
 }
 
 .footer-font {
@@ -35,7 +31,7 @@
     margin: 0 auto;
     font-size: 14px;
     max-width: 40%;
-    height: 100px;
+    height: auto;
     text-align: center;
 }
 
@@ -43,15 +39,11 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
-	width: 280px;
+	width: 230px;
 	height: 120px;
 }
 
-.social-icons-0 img {
-	margin: 20px;
-}
-
-.footer-text-list ul {
+.footer-text-list ul a {
 	list-style: none;
 	color: rgba(255, 255, 255, .4)
 }

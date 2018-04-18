@@ -3,21 +3,24 @@
 <head>
 <title>Contact</title>
 <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<link href="css/owl.carousel.css" rel="stylesheet">
 <script src="js/jquery.min.js"></script>
 <script src="js/modernizr.custom.js"></script>
-<!-- Custom Theme files -->
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-<link href="css/owl.carousel.css" rel="stylesheet">
-<!-- Custom Theme files -->
+<link rel="stylesheet" href="css/lightbox.css" type="text/css" media="all" />
+<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+<link rel="stylesheet" href="css/footer.css">
+<link rel="stylesheet" type="text/css" href="css/selfstyle.css"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Interior Design Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- for bootstrap working -->
+		<script src="js/bootstrap.js"></script>
+<!-- //for bootstrap working -->
 <!-- web fonts -->
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
-<!-- for bootstrap working -->
 		<script src="js/bootstrap.js"></script>
 <!-- //for bootstrap working -->
 <!-- responsiveslides -->
@@ -53,8 +56,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </head>
 <body>
 	<!-- header-section-starts -->	
-	<div class="header" id="header">
-		<div class="header-top">
+<!-- header-section-starts -->	
+<header class="header" id="header">
+		<!-- <div class="header-top">
 			<div class="container">
 				<p class="location"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>29C, Autem quibusdam debitis.</p>
 				<p class="phonenum"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>+ 655 8858 2068 54892</p>
@@ -68,52 +72,47 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 				<div class="clearfix"></div>
 			</div>
-		</div>
+		</div> -->
 		<div class="header-bottom">
 		<div class="logo text-center">
-				<h1><a href="index.html">Interior Design</a></h1>
-			</div>
-			<!-- navigation -->
-<div class="navigation">
-	<div class="container">
-		<nav class="navbar navbar-default">
-		 
-			<!-- Brand and toggle get grouped for better mobile display -->
-			<div class="navbar-header">
-			  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			  </button>
-			</div>
+				<img src="images/logo.jpg" >
+		</div>
+		<!-- navigation -->
+		<div class="navigation">
+			<div class="container">
+				<nav class="navbar navbar-default">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					</div>
 
-			<!-- Collect the nav links, forms, and other content for toggling -->
-			<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
-				  <ul class="nav navbar-nav">
-					<li><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
-					<li><a href="about.html">About</a></li>
-					<li><a href="typography.html">Short Codes</a></li>
-					<li><a href="gallery.html">Gallery</a></li>
-					<li><a href="index.html">Blog</a></li>
-					<li class="active"><a href="contact.html">Contact Us</a></li>
-				  </ul>
-			  <div class="clearfix"></div>
-			</div><!-- /.navbar-collapse -->
-		</nav>
-	</div>
-</div>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav">
+							<li class="active"><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
+							<li><a href="about.html">About us</a></li>
+							<li><a href="porducts.html">Products</a></li>
+							<li><a href="blog.html">Blog</a></li>
+							<li><a href="gallery.html">FAQs</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					<div class="clearfix"></div>
+					</div><!-- /.navbar-collapse -->
+				</nav>
+			</div>
+		</div>
 <!-- //navigation -->
-
-
 				<div class="clearfix"></div>
 			</div>
-
-	</div>
-	<div class="screen-shots">
-					<!--sreen-gallery-cursual-->
+	</header>
+	<!--幻灯片-->
+	<!--<div class="screen-shots">
 						<div class="sreen-gallery-cursual">
-							<!-- start content_slider -->
 						       <div id="owl-demo" class="owl-carousel">
 					                <div class="item">
 					                	<div class="item-grid">
@@ -205,8 +204,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					                	</div>
 					                </div>
 				              </div>
-						<!--//sreen-gallery-cursual-->
-					</div>
+					</div>-->
 				<!-- requried-jsfiles-for owl -->
 							    <script src="js/owl.carousel.js"></script>
 							        <script>
@@ -223,6 +221,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							    </script>
 							 
 			 <!-- //requried-jsfiles-for owl -->
+							-->
 <div class="contact-section">
 	<header>
 		<h2 class="heading text-center">Find Us Here</h2>
@@ -252,56 +251,99 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                  </form>
          </div>
          <div class="col-md-4 contact-top_right">
-			  <h3>contact info</h3>
-			  <p>diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis.</p>
+			  <h3>Welcome to contact us</h3>
+			  <p>If you have any needs, Please kindly contact us and we will give you the best service and the competitive price!
+					I believe we can establish a long term business relationship with you based on our good quality and service. We are looking forward to your enquiries!</p>
 			  <ul class="contact_info">
-			  	<li><span>+1-900-235-2456</span></li>
-			  	<li><span class="msg"><a href="malito:mail@example.com">mail(at)example.com</a></span></li>
+				  	<li><span>Add：SOFTSCENE CENTER A-1207，NO.1A-4 SOFTWARE PARK ROAD, HIGH-TECH ZONE, DALIAN, LIAONING, CHINA</span></li>
+					<li><span>PC: 116000</span></li>
+					<li><span>Tel：86-0411-84251211</span></li>
+					<li><span>Fax：86-0411-84251211-1</span></li>
+			  		<li><span class="msg"><a href="http://www.yimalabel.com">Web:http://www.yimalabel.com</a></span></li>
 			  </ul>
 	 	</div>
 	   </div>
      </div>
 </div>
 		<!-- footer-section -->
-	<div class="footer">
-		<div class="footer-top">
-			<div class="container">
-				<div class="col-md-4 footer-grid">
-					<h5>About Us</h5>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in purus nibh. Donec ornare felis neque. Nullam tortor nulla, sodales quis posuere quis, tristique nec libero. Proin vitae convallis odio. Morbi nec enim nisi. Aliquam erat volutpat. </p>
+		<div class="footer">
+			<div class="footer-top">
+				<div class="container">
+					<div class="col-md-6 footer-grid footer-text-list">
+						<div class="col-md-4 footer-grid footer-box-text">
+							<h5 style="height: 2.2em;display: flex;align-items: center">Order support</h5>
+							<ul>
+								<li><a href="porducts.html">Custumized</a></li>
+								<li><a href="porducts.html">Quotation</a></li>
+								<li><a href="porducts.html">Minimum order</a></li>
+								<li><a href="porducts.html">Sample request</a></li>
+								<li><a href="porducts.html">Order process</a></li>
+								<li><a href="porducts.html">Delivery time</a></li>
+								<li><a href="porducts.html">How to play</a></li>
+								<li><a href="porducts.html">Shipping info</a></li>
+							</ul>
+						</div>
+						<div class="col-md-4 footer-grid">
+							<h5 style="height: 2.2em;display: flex;align-items: center">Produce</h5>
+							<ul>
+								<li><a href="contact.html">Business strength</a></li>
+								<li><a href="contact.html">Series case</a></li>
+								<li><a href="contact.html">Produce example</a></li>
+								<li><a href="contact.html">New production</a></li>
+							</ul>
+						</div>
+						<div class="col-md-4 footer-grid">
+							<h5 style="height: 2.2em;display: flex;align-items: center">About</h5>
+							<ul>
+								<li><a href="about.html">About</a></li>
+								<li><a href="about.html">Contact</a></li>
+								<li><a href="about.html">Corporate culture</a></li>
+								<li><a href="about.html">Public chaty</a></li>
+								<li><a href="about.html">Careers opportunities</a></li>
+								<li><a href="about.html">Trademark Claim</a></li>
+								<li><a href="about.html">Sitemap</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-3 footer-grid">
+						<div class="social-icons footer-social-icons">
+							<a href="#"><img src="images/contactus_mm86.png"></a>
+							<a href="#"><img src="images/f_1zsu.jpg" style="width: 34px;"></a>
+							<a href="#"><img src="images/in.jpg" style="width: 34px;"></a>
+							<a href="#"><img src="images/p_lpas.jpg" style="width: 34px;"></a>
+							<a href="#"><img src="images/t-1_06e3.jpg" style="width: 34px;"></a>
+						</div>
+					</div>
+					<div class="col-md-3 footer-grid">
+						<section class="social-icons-0">
+							<a href="#"><img src="images/tt_npek.jpg" style="width: 97px;"></a>
+							<a href="#"><img src="images/njz1.jpg" style="width: 97px;"></a>
+							<a href="#"><img src="images/paypal_d5cm.jpg" style="width: 97px;"></a>
+							<a href="#"><img src="images/sldj.jpg" style="width: 97px;"></a>
+						</section>
+					</div>
+					<div class="clearfix"></div>
 				</div>
-				<div class="col-md-4 footer-grid">
-					<h5>Twitter Feed</h5>
-					<p>Check out th best designs online in the world <br>at <a href="mail-to:mail@example.com">http://example.com </a></p>
-					<span>1 day ago</span>
-					<p><a href="#">Twitter</a>, may be the more visual platform for design inspiration.</p>
-					<span>4 day ago</span>
-				</div>
-				<div class="col-md-4 footer-grid">
-					<h5>Follow Us</h5>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in purus nibh. Donec ornare felis neque. Nullam tortor! </p>
-					
-			<div class="social-icons footer-social-icons">
-				<a href="#"><i class="facebook"></i></a>
-				<a href="#"><i class="twitter"></i></a>
-				<a href="#"><i class="google-plus"></i></a>
 			</div>
+			<div class="footer-bottom">
+					<div class="container">
+						<div class="copyrights col-md-10">
+							<p>Copyright &copy; 2015.Company name All rights reserved.<a target="_blank" href="http://www.cssmoban.com/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></p>					
+						</div>
+						<div class="go-top col-md-2">
+							<a href="#header" class="scroll"><span class="glyphicon glyphicon-chevron-up"></span></a>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					<section class="footer-font">
+						<p>
+							Copyright©2008-2016 YIMA.All Right Reserved.Yima garment accessories all rights reserved.
+							All kinds ofhang tags&woven labels.Best quality&price&service.Clothing labels on-shop shopping.
+							All the samples for reference only.Not for selling,	production and other buesiness.
+						</p>
+					</section>
 				</div>
-				<div class="clearfix"></div>
-			</div>
 		</div>
-		<div class="footer-bottom">
-			<div class="container">
-				<div class="copyrights col-md-10">
-					<p>Copyright &copy; 2015.Company name All rights reserved.<a target="_blank" href="http://www.cssmoban.com/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></p>					
-				</div>
-				<div class="go-top col-md-2">
-					<a href="#header" class="scroll"><span class="glyphicon glyphicon-chevron-up"></span></a>
-				</div>
-				<div class="clearfix"></div>
-			</div>
-		</div>
-	</div>
 	<!-- footer-section -->
 <!----> 
 

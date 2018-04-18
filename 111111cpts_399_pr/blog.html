@@ -1,60 +1,63 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>blog</title>
-<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
-<script src="js/jquery.min.js"></script>
-<script src="js/modernizr.custom.js"></script>
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-<link href="css/owl.carousel.css" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="css/footer.css"/>
-<link rel="stylesheet" type="text/css" href="css/selfstyle.css"/>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Interior Design Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+	<title>blog</title>
+	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+	<script src="js/jquery.min.js"></script>
+	<script src="js/modernizr.custom.js"></script>
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/owl.carousel.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/footer.css" />
+	<link rel="stylesheet" type="text/css" href="css/selfstyle.css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="Interior Design Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<!-- web fonts -->
-<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" type="text/css" href="css/blogstyle.css"/>
-<!-- for bootstrap working -->
-		<script src="js/bootstrap.js"></script>
-<!-- //for bootstrap working -->
-<!-- responsiveslides -->
+	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<!-- web fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic'
+	 rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/blogstyle.css" />
+	<!-- for bootstrap working -->
+	<script src="js/bootstrap.js"></script>
+	<!-- //for bootstrap working -->
+	<!-- responsiveslides -->
 	<script src="js/responsiveslides.min.js"></script>
-		<script>
-			// You can also use "$(window).load(function() {"
-			$(function () {
-		    // Slideshow 4
+	<script>
+		// You can also use "$(window).load(function() {"
+		$(function () {
+			// Slideshow 4
 			$("#slider4").responsiveSlides({
-			auto: true,
-			pager: true,
-			nav: true,
-			speed: 500,
-			namespace: "callbacks",
-			before: function () {
-			$('.events').append("<li>before event fired.</li>");
+				auto: true,
+				pager: true,
+				nav: true,
+				speed: 500,
+				namespace: "callbacks",
+				before: function () {
+					$('.events').append("<li>before event fired.</li>");
 				},
 				after: function () {
-				$('.events').append("<li>after event fired.</li>");
+					$('.events').append("<li>after event fired.</li>");
 				}
-				});
-				});
-	</script>
-<!-- responsiveslides -->
- <script type="text/javascript">
-		jQuery(document).ready(function($) {
-			$(".scroll").click(function(event){		
-				event.preventDefault();
-				$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
 			});
 		});
-    </script>
+	</script>
+	<!-- responsiveslides -->
+	<script type="text/javascript">
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+				$('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1200);
+			});
+		});
+	</script>
 </head>
+
 <body>
-    	<!-- header-section-starts -->	
-    <header class="header" id="header">
-			<div class="header-top">
+	<!-- header-section-starts -->
+	<header class="header" id="header">
+		<!-- <div class="header-top">
 				<div class="container">
 					<p class="location"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>29C, Autem quibusdam debitis.</p>
 					<p class="phonenum"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>+ 655 8858 2068 54892</p>
@@ -68,53 +71,68 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</div>
 					<div class="clearfix"></div>
 				</div>
-			</div>
-			<div class="header-bottom">
+			</div> -->
+		<div class="header-bottom">
 			<div class="logo text-center">
-					<img src="images/logo.jpg" >
-				</div>
-				<!-- navigation -->
-	<div class="navigation">
-		<div class="container">
-			<nav class="navbar navbar-default">
-			 
-				<!-- Brand and toggle get grouped for better mobile display -->
-				<div class="navbar-header">
-				  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				  </button>
-				</div>
-	
-				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
-					  <ul class="nav navbar-nav">
-						<li class="active"><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
-						<li><a href="about.html">About us</a></li>
-						<li><a href="porducts.html">Products</a></li>
-						<li><a href="blog.html">Blog</a></li>
-						<li><a href="gallery.html">FAQs</a></li>
-						<li><a href="contact.html">Contact</a></li>
-					  </ul>
-				  <div class="clearfix"></div>
-				</div><!-- /.navbar-collapse -->
-			</nav>
-		</div>
-	</div>
-	<!-- //navigation -->
-				<div class="clearfix"></div>
+				<img src="images/logo.jpg">
 			</div>
+			<!-- navigation -->
+			<div class="navigation">
+				<div class="container">
+					<nav class="navbar navbar-default">
+
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						</div>
+
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav">
+								<li class="active">
+									<a href="index.html">Home
+										<span class="sr-only">(current)</span>
+									</a>
+								</li>
+								<li>
+									<a href="about.html">About us</a>
+								</li>
+								<li>
+									<a href="porducts.html">Products</a>
+								</li>
+								<li>
+									<a href="blog.html">Blog</a>
+								</li>
+								<li>
+									<a href="gallery.html">FAQs</a>
+								</li>
+								<li>
+									<a href="contact.html">Contact</a>
+								</li>
+							</ul>
+							<div class="clearfix"></div>
+						</div>
+						<!-- /.navbar-collapse -->
+					</nav>
+				</div>
+			</div>
+			<!-- //navigation -->
+			<div class="clearfix"></div>
 		</div>
-    </header>
-    <!--中间信息-->
-    <div class="information-mid">
-        <!--新闻-->
-        <article class="col-md-8" id="news-box">
+		</div>
+	</header>
+	<!--中间信息-->
+	<div class="information-mid">
+		<!--新闻-->
+		<article class="col-md-8" id="news-box">
 			<h2>Category: hang tag string</h2>
 			<!--模板块-->
-			<section class="news-sec">	
+			<section class="news-sec">
 				<h2>hang tag string’s photo gallery</h2>
 				<figure class="col-md-2">
 					<div class="head">
@@ -129,28 +147,47 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</ul>
 				</figure>
 				<figure class="col-md-10 text-aere">
-					<img class="col-md-4 col-xs-12" src="https://www.clothinglabels.cn/wp-content/uploads/2017/07/1-hang-tag-string-001.jpg"/>
-					<img class="col-md-4 col-xs-12" src="https://www.clothinglabels.cn/wp-content/uploads/2017/07/1-hang-tag-string-001.jpg"/>
-					<img class="col-md-4 col-xs-12" src="https://www.clothinglabels.cn/wp-content/uploads/2017/07/1-hang-tag-string-001.jpg"/>
-					<img class="col-md-4 col-xs-12" src="https://www.clothinglabels.cn/wp-content/uploads/2017/07/1-hang-tag-string-001.jpg"/>
-					<img class="col-md-4 col-xs-12" src="https://www.clothinglabels.cn/wp-content/uploads/2017/07/1-hang-tag-string-302.jpg"/>
-					<img class="col-md-4 col-xs-12" src="https://www.clothinglabels.cn/wp-content/uploads/2017/07/1-hang-tag-string-167.jpg"/>
+					<img class="col-md-4 col-xs-12" src="https://www.clothinglabels.cn/wp-content/uploads/2017/07/1-hang-tag-string-001.jpg"
+					/>
+					<img class="col-md-4 col-xs-12" src="https://www.clothinglabels.cn/wp-content/uploads/2017/07/1-hang-tag-string-001.jpg"
+					/>
+					<img class="col-md-4 col-xs-12" src="https://www.clothinglabels.cn/wp-content/uploads/2017/07/1-hang-tag-string-001.jpg"
+					/>
+					<img class="col-md-4 col-xs-12" src="https://www.clothinglabels.cn/wp-content/uploads/2017/07/1-hang-tag-string-001.jpg"
+					/>
+					<img class="col-md-4 col-xs-12" src="https://www.clothinglabels.cn/wp-content/uploads/2017/07/1-hang-tag-string-302.jpg"
+					/>
+					<img class="col-md-4 col-xs-12" src="https://www.clothinglabels.cn/wp-content/uploads/2017/07/1-hang-tag-string-167.jpg"
+					/>
 					<a href="#" class="link-text col-md-12 col-xs-12">查看详情</a>
 				</figure>
 				<div class="clearfix"></div>
 			</section>
 			<div class="comment-icons">
 				<ul>
-					<li><span class="glyphicon glyphicon-bookmark"></span><a href="#">Lorem ipsum dolor sit </a> </li>
-					<li><span class="glyphicon glyphicon-calendar"></span>June 2, 2015</li>
-					<li><span class="glyphicon glyphicon-user"></span> <a href="#">Admin</a></li>
-					<li><span class="glyphicon glyphicon-send"></span> <a href="#">5 comments</a></li>
-					<li><span class="glyphicon glyphicon-thumbs-up"></span><a href="#">15</a></li>
+					<li>
+						<span class="glyphicon glyphicon-bookmark"></span>
+						<a href="#">Lorem ipsum dolor sit </a>
+					</li>
+					<li>
+						<span class="glyphicon glyphicon-calendar"></span>June 2, 2015</li>
+					<li>
+						<span class="glyphicon glyphicon-user"></span>
+						<a href="#">Admin</a>
+					</li>
+					<li>
+						<span class="glyphicon glyphicon-send"></span>
+						<a href="#">5 comments</a>
+					</li>
+					<li>
+						<span class="glyphicon glyphicon-thumbs-up"></span>
+						<a href="#">15</a>
+					</li>
 				</ul>
 			</div>
 			<!--模板块end-->
 			<!--模板块2-->
-			<section class="news-sec">	
+			<section class="news-sec">
 				<h2>Protected: Show Your Products with Custom Hang Tags</h2>
 				<figure class="col-md-2">
 					<div class="head">
@@ -165,7 +202,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</ul>
 				</figure>
 				<figure class="col-md-10 text-aere password-box">
-					<span>content is password protected. To view it please enter your password below:<br></span>
+					<span>content is password protected. To view it please enter your password below:
+						<br>
+					</span>
 					<span class="password-word">PASSWORD: </span>
 					<input type="password" class="col-xs-12 col-md-12">
 					<button type="submit" class="col-xs-2 col-md-2">Enter</button>
@@ -174,149 +213,229 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</section>
 			<div class="comment-icons">
 				<ul>
-					<li><span class="glyphicon glyphicon-bookmark"></span><a href="#">Lorem ipsum dolor sit </a> </li>
-					<li><span class="glyphicon glyphicon-calendar"></span>June 2, 2015</li>
-					<li><span class="glyphicon glyphicon-user"></span> <a href="#">Admin</a></li>
-					<li><span class="glyphicon glyphicon-send"></span> <a href="#">5 comments</a></li>
-					<li><span class="glyphicon glyphicon-thumbs-up"></span><a href="#">15</a></li>
+					<li>
+						<span class="glyphicon glyphicon-bookmark"></span>
+						<a href="#">Lorem ipsum dolor sit </a>
+					</li>
+					<li>
+						<span class="glyphicon glyphicon-calendar"></span>June 2, 2015</li>
+					<li>
+						<span class="glyphicon glyphicon-user"></span>
+						<a href="#">Admin</a>
+					</li>
+					<li>
+						<span class="glyphicon glyphicon-send"></span>
+						<a href="#">5 comments</a>
+					</li>
+					<li>
+						<span class="glyphicon glyphicon-thumbs-up"></span>
+						<a href="#">15</a>
+					</li>
 				</ul>
 			</div>
 			<!--模板块2end-->
-        </article>
-        <!--边栏推荐-->
-        <aside class="recent-posts col-md-4">
-            <h4>Recent posts</h4>
-            <section class="recent-posts-info">
-                <figure class="posts-left sngl-img">
-                    <a href="single.html"> <img src="images/img16.jpg" alt=""/> </a>
-                </figure>
-                <section class="posts-right">
-                    <span>June 5, 2015</span>
-                    <a class="rpr" href="single.html">FINIBUS BONORUM MALORUM </a>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing incididunt.</p>
-                    <a href="single.html" class="btn btn-primary hvr-rectangle-in">Read More</a>
-                </section>
-                <div class="clearfix"> </div>
-            </section>	
-            <section class="recent-posts-info">
-                <figure class="posts-left sngl-img">
-                    <a href="single.html"> <img src="images/img17.jpg" alt=""/></a>
-                </figure>
-                <section class="posts-right">
-                    <span>June 1, 2015</span>
-                    <a class="rpr" href="single.html">FINIBUS BONORUM MALORUM </a>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing incididunt.</p>
-                    <a href="single.html" class="btn btn-primary hvr-rectangle-in">Read More</a>
-                </section>
-                <div class="clearfix"> </div>
-            </section>
-            <section class="recent-posts-info">
-                <figure class="posts-left sngl-img">
-                    <a href="single.html"> <img src="images/img18.jpg" alt=""/></a>
-                </figure>
-                <section class="posts-right">
-                    <span>June 1, 2015</span>
-                    <a class="rpr" href="single.html">FINIBUS BONORUM MALORUM </a>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing incididunt.</p>
-                    <a href="single.html" class="btn btn-primary hvr-rectangle-in">Read More</a>
-                </section>
-                <div class="clearfix"> </div>
-            </section>
-            <section class="recent-posts-info">
-                <figure class="posts-left sngl-img">
-                    <a href="single.html"> <img src="images/img19.jpg" alt=""/></a>
-                </figure>
-                <section class="posts-right">
-                    <span>June 1, 2015</span>
-                    <a class="rpr" href="single.html">FINIBUS BONORUM MALORUM </a>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing incididunt.</p>
-                    <a href="single.html" class="btn btn-primary hvr-rectangle-in">Read More</a>
-                </section>
-                <div class="clearfix"> </div>
-            </section>
-            <section class="recent-posts-info">
-                <figure class="posts-left sngl-img">
-                    <a href="single.html"> <img src="images/img20.jpg" alt=""/></a>
-                </figure>
-                <section class="posts-right">
-                    <span>June 1, 2015</span>
-                    <a class="rpr" href="single.html">FINIBUS BONORUM MALORUM </a>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing incididunt.</p>
-                    <a href="single.html" class="btn btn-primary hvr-rectangle-in">Read More</a>
-                </section>
-                <div class="clearfix"> </div>
-            </section>
-            <section class="recent-posts-info">
-                <figure class="posts-left sngl-img">
-                    <a href="single.html"> <img src="images/img21.jpg" alt=""/></a>
-                </figure>
-                <section class="posts-right">
-                    <span>June 1, 2015</span>
-                    <a class="rpr" href="single.html">FINIBUS BONORUM MALORUM </a>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing incididunt.</p>
-                    <a href="single.html" class="btn btn-primary hvr-rectangle-in">Read More</a>
-                </section>
-                <div class="clearfix"> </div>
-            </section>
-            <div class="clearfix"> </div>
+		</article>
+		<!--边栏推荐-->
+		<aside class="recent-posts col-md-4">
+			<h4>Recent posts</h4>
+			<section class="recent-posts-info">
+				<figure class="posts-left sngl-img">
+					<a href="single.html">
+						<img src="images/img16.jpg" alt="" /> </a>
+				</figure>
+				<section class="posts-right">
+					<span>June 5, 2015</span>
+					<a class="rpr" href="single.html">FINIBUS BONORUM MALORUM </a>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing incididunt.</p>
+					<a href="single.html" class="btn btn-primary hvr-rectangle-in">Read More</a>
+				</section>
+				<div class="clearfix"> </div>
+			</section>
+			<section class="recent-posts-info">
+				<figure class="posts-left sngl-img">
+					<a href="single.html">
+						<img src="images/img17.jpg" alt="" />
+					</a>
+				</figure>
+				<section class="posts-right">
+					<span>June 1, 2015</span>
+					<a class="rpr" href="single.html">FINIBUS BONORUM MALORUM </a>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing incididunt.</p>
+					<a href="single.html" class="btn btn-primary hvr-rectangle-in">Read More</a>
+				</section>
+				<div class="clearfix"> </div>
+			</section>
+			<section class="recent-posts-info">
+				<figure class="posts-left sngl-img">
+					<a href="single.html">
+						<img src="images/img18.jpg" alt="" />
+					</a>
+				</figure>
+				<section class="posts-right">
+					<span>June 1, 2015</span>
+					<a class="rpr" href="single.html">FINIBUS BONORUM MALORUM </a>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing incididunt.</p>
+					<a href="single.html" class="btn btn-primary hvr-rectangle-in">Read More</a>
+				</section>
+				<div class="clearfix"> </div>
+			</section>
+			<section class="recent-posts-info">
+				<figure class="posts-left sngl-img">
+					<a href="single.html">
+						<img src="images/img19.jpg" alt="" />
+					</a>
+				</figure>
+				<section class="posts-right">
+					<span>June 1, 2015</span>
+					<a class="rpr" href="single.html">FINIBUS BONORUM MALORUM </a>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing incididunt.</p>
+					<a href="single.html" class="btn btn-primary hvr-rectangle-in">Read More</a>
+				</section>
+				<div class="clearfix"> </div>
+			</section>
+			<section class="recent-posts-info">
+				<figure class="posts-left sngl-img">
+					<a href="single.html">
+						<img src="images/img20.jpg" alt="" />
+					</a>
+				</figure>
+				<section class="posts-right">
+					<span>June 1, 2015</span>
+					<a class="rpr" href="single.html">FINIBUS BONORUM MALORUM </a>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing incididunt.</p>
+					<a href="single.html" class="btn btn-primary hvr-rectangle-in">Read More</a>
+				</section>
+				<div class="clearfix"> </div>
+			</section>
+			<section class="recent-posts-info">
+				<figure class="posts-left sngl-img">
+					<a href="single.html">
+						<img src="images/img21.jpg" alt="" />
+					</a>
+				</figure>
+				<section class="posts-right">
+					<span>June 1, 2015</span>
+					<a class="rpr" href="single.html">FINIBUS BONORUM MALORUM </a>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing incididunt.</p>
+					<a href="single.html" class="btn btn-primary hvr-rectangle-in">Read More</a>
+				</section>
+				<div class="clearfix"> </div>
+			</section>
+			<div class="clearfix"> </div>
 		</aside>
 		<div class="clearfix"> </div>
-    </div>    
-    <!-- footer-section -->
-	<footer class="footer">
-			<div class="footer-top">
-				<div class="container">
-				    <div class="col-md-6 footer-grid footer-text-list">
-                        <div class="col-md-4 footer-grid footer-box-text">
-                            <h5>Order support</h5>
-                            <ul>
-                                <li>Custumized</li>
-                                <li>Quotation</li>
-                                <li>Minimum order</li>
-                                <li>Sample request</li>
-                                <li>Order process</li>
-                                <li>Delivery time</li>
-                                <li>How to play</li>
-                                <li>Shipping info</li>
-                            </ul>
-                        </div>
-                        <div class="col-md-4 footer-grid">
-                            <h5>Produce</h5>
-                            <ul>
-                                <li>Business strength</li>
-                                <li>Series case</li>
-                                <li>Produce example</li>
-                                <li>New production</li>
-                            </ul>
-                        </div>
-                        <div class="col-md-4 footer-grid">
-                            <h5>About</h5>
-                            <ul>
-                                <li>About</li>
-                                <li>Contact</li>
-                                <li>Corporate culture</li>
-                                <li>Public chaty</li>
-                                <li>Careers opportunities</li>
-                                <li>Trademark Claim</li>
-                                <li>Sitemap</li>
-                            </ul>
-                        </div>
-                    </div>
+	</div>
+	<!-- footer-section -->
+	<div class="footer">
+		<div class="footer-top">
+			<div class="container">
+				<div class="col-md-6 footer-grid footer-text-list">
+					<div class="col-md-4 footer-grid footer-box-text">
+						<h5 style="height: 2.2em;display: flex;align-items: center">Order support</h5>
+						<ul>
+							<li>
+								<a href="porducts.html">Custumized</a>
+							</li>
+							<li>
+								<a href="porducts.html">Quotation</a>
+							</li>
+							<li>
+								<a href="porducts.html">Minimum order</a>
+							</li>
+							<li>
+								<a href="porducts.html">Sample request</a>
+							</li>
+							<li>
+								<a href="porducts.html">Order process</a>
+							</li>
+							<li>
+								<a href="porducts.html">Delivery time</a>
+							</li>
+							<li>
+								<a href="porducts.html">How to play</a>
+							</li>
+							<li>
+								<a href="porducts.html">Shipping info</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-4 footer-grid">
+						<h5 style="height: 2.2em;display: flex;align-items: center">Produce</h5>
+						<ul>
+							<li>
+								<a href="contact.html">Business strength</a>
+							</li>
+							<li>
+								<a href="contact.html">Series case</a>
+							</li>
+							<li>
+								<a href="contact.html">Produce example</a>
+							</li>
+							<li>
+								<a href="contact.html">New production</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-4 footer-grid">
+						<h5 style="height: 2.2em;display: flex;align-items: center">About</h5>
+						<ul>
+							<li>
+								<a href="about.html">About</a>
+							</li>
+							<li>
+								<a href="about.html">Contact</a>
+							</li>
+							<li>
+								<a href="about.html">Corporate culture</a>
+							</li>
+							<li>
+								<a href="about.html">Public chaty</a>
+							</li>
+							<li>
+								<a href="about.html">Careers opportunities</a>
+							</li>
+							<li>
+								<a href="about.html">Trademark Claim</a>
+							</li>
+							<li>
+								<a href="about.html">Sitemap</a>
+							</li>
+						</ul>
+					</div>
+				</div>
 				<div class="col-md-3 footer-grid">
 					<div class="social-icons footer-social-icons">
-						<a href="#"><img src="images/contactus_mm86.png"></a>
-						<a href="#"><img src="images/f_1zsu.jpg" style="width: 34px;"></a>
-						<a href="#"><img src="images/in.jpg" style="width: 34px;"></a>
-						<a href="#"><img src="images/p_lpas.jpg" style="width: 34px;"></a>
-						<a href="#"><img src="images/t-1_06e3.jpg" style="width: 34px;"></a>
+						<a href="#">
+							<img src="images/contactus_mm86.png">
+						</a>
+						<a href="#">
+							<img src="images/f_1zsu.jpg" style="width: 34px;">
+						</a>
+						<a href="#">
+							<img src="images/in.jpg" style="width: 34px;">
+						</a>
+						<a href="#">
+							<img src="images/p_lpas.jpg" style="width: 34px;">
+						</a>
+						<a href="#">
+							<img src="images/t-1_06e3.jpg" style="width: 34px;">
+						</a>
 					</div>
-		    	</div>
+				</div>
 				<div class="col-md-3 footer-grid">
 					<section class="social-icons-0">
-						<a href="#"><img src="images/tt_npek.jpg" style="width: 97px;"></a>
-						<a href="#"><img src="images/njz1.jpg" style="width: 97px;"></a>
-						<a href="#"><img src="images/paypal_d5cm.jpg" style="width: 97px;"></a>
-						<a href="#"><img src="images/sldj.jpg" style="width: 97px;"></a>
+						<a href="#">
+							<img src="images/tt_npek.jpg" style="width: 97px;">
+						</a>
+						<a href="#">
+							<img src="images/njz1.jpg" style="width: 97px;">
+						</a>
+						<a href="#">
+							<img src="images/paypal_d5cm.jpg" style="width: 97px;">
+						</a>
+						<a href="#">
+							<img src="images/sldj.jpg" style="width: 97px;">
+						</a>
 					</section>
 				</div>
 				<div class="clearfix"></div>
@@ -325,21 +444,25 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="footer-bottom">
 			<div class="container">
 				<div class="copyrights col-md-10">
-					<p>Copyright &copy; 2015.Company name All rights reserved.<a target="_blank" href="http://www.cssmoban.com/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></p>					
+					<p>Copyright &copy; 2015.Company name All rights reserved.
+						<a target="_blank" href="http://www.cssmoban.com/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a>
+					</p>
 				</div>
 				<div class="go-top col-md-2">
-					    <a href="#header" class="scroll"><span class="glyphicon glyphicon-chevron-up"></span></a>
+					<a href="#header" class="scroll">
+						<span class="glyphicon glyphicon-chevron-up"></span>
+					</a>
 				</div>
-			    	<div class="clearfix"></div>
+				<div class="clearfix"></div>
 			</div>
 			<section class="footer-font">
 				<p>
-					Copyright©2008-2016 YIMA.All Right Reserved.Yima garment accessories all rights reserved.
-					All kinds ofhang tags&woven labels.Best quality&price&service.Clothing labels on-shop shopping.
-		    		All the samples for reference only.Not for selling,	production and other buesiness.
+					Copyright©2008-2016 YIMA.All Right Reserved.Yima garment accessories all rights reserved. All kinds ofhang tags&woven labels.Best
+					quality&price&service.Clothing labels on-shop shopping. All the samples for reference only.Not for selling, production
+					and other buesiness.
 				</p>
 			</section>
 		</div>
-	</footer>
+	</div>
 	<!-- footer-section -->
 </body>
